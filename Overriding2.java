@@ -1,11 +1,11 @@
 class Animal 
 {
 void eat(){
-System.out.println("Lion is a wild animal");
+System.out.println("Every animal will eat");
 }
 void sound()
 {
-System.out.println("dog is a domestic animal");
+System.out.println("Every animal will make a sound");
 }
 }
 class Tiger extends Animal 
