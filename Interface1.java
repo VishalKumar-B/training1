@@ -18,7 +18,7 @@ class Interface1
 {
 public static void main(String args[])
 {
-Vehicle bmw =new Car();
+Car bmw =new Car();
 bmw.wheels();
 bmw.petrol();
 }
