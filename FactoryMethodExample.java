@@ -21,20 +21,20 @@ class Fz extends Bike{
   System.out.println("cost is: 100000");
  }
  void fuelcapacity(){
-  System.out.println("Ram of Oneplus is: 8GB");
+  System.out.println(" fuel capacity: 12");
  }
- void harddisk(){
-  System.out.println("fuel capacity: 12");
- }
+
+
+ 
 }
 
 class BikeFactory{
- static Bike getBike(String mobileName){
-  if(mobileName.equalsIgnoreCase("Redmi")){
-   return new Redmi();
+ static Bike getBike(String bikeName){
+  if(bikeName.equalsIgnoreCase("cbz")){
+   return new Cbz();
   }
-  else if(mobileName.equalsIgnoreCase("Oneplus")){
-   return new Oneplus();
+  else if(bikeName.equalsIgnoreCase("Fz")){
+   return new Fz();
   }
   else {
    return null;
