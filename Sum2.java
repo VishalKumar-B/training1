@@ -1,13 +1,13 @@
 package com.ClassPrograms;
-//sum using while loop
-public class Sum {
+//sum using do-while loop
+public class Sum2 {
 	public static void main(String[] args) {
 		int r,sum=0,num=123;
-		while(num>0) {
+		do{
 			r=num%10;
 			sum=sum+r;
 			num=num/10;
-		}
-		System.out.println("Sum: "+sum);
+		}while(num>0);
+		System.out.println("Sum: " +sum);
 	}
 }
