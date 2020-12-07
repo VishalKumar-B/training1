@@ -1,7 +1,6 @@
 package com.motivity.doctor;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -36,7 +35,7 @@ public class DoctorLogin extends HttpServlet {
 
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
-		PrintWriter pw = response.getWriter();
+		
 
 		String sql = "select * from doctor where email=? and password=?";
 
