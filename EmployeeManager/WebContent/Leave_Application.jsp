@@ -58,19 +58,21 @@
 					placeholder="select to date"></td>
 			</tr>
 			<tr>
-				<%
-					String query = "select name from manager";
-				ps = connection.prepareStatement(query);
-				ResultSet rs1 = ps.executeQuery();
-				if (rs1.next()) {
-				%>
 				<td align="right">Manager Name:</td>
 				<td align="left"><select name="manager_name">
 						<option value="none" selected disabled hidden>-select-</option>
+						<%
+							String query = "select name from manager";
+						ps = connection.prepareStatement(query);
+						ResultSet rs1 = ps.executeQuery();
+						while (rs1.next()) {
+						%>
 						<option value="<%=rs1.getString("name")%>"><%=rs1.getString("name")%></option>
-				</select> <%
- 	}
- %>
+
+						<%
+							}
+						%>
+				</select>
 			</tr>
 			<tr>
 				<td></td>
