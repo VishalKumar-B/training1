@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="C5EEF9">
+	<br>
+	<br>
+	<center>
+		<h1>Welcome to Employee Registeration</h1>
+	</center>
+	<br>
+	<br>
+	<form action="./Employee_Register" method="post" align="center">
+		<table align="center">
+			<tr>
+				<td align="right">Name:</td>
+				<td align="left"><input type="text" name="name"
+					placeholder="Enter Name"></td>
+			</tr>
+			<tr>
+				<td align="right">Password:</td>
+				<td align="left"><input type="password" name="password"
+					placeholder="Enter password"></td>
+			</tr>
+			<tr>
+				<td align="right">Email:</td>
+				<td align="left"><input type="email" name="email"
+					placeholder="Enter email"></td>
+			</tr>
+			<tr>
+				<td align="right">Phone:</td>
+				<td align="left"><input type="number" name="phone"
+					placeholder="Enter Phone number"></td>
+			</tr>
+			<tr>
+				<td align="right">Date Of Birth:</td>
+				<td align="left"><input type="date" name="date_of_birth"></td>
+			</tr>
+			<tr>
+				<td align="right">Age:</td>
+				<td align="left"><input type="number" name="age"
+					placeholder="Enter your age"></td>
+			</tr>
+
+			<tr>
+				<td align="right">Gender:</td>
+				<td align="left"><input type="radio" name="gender" value="Male">Male
+					<input type="radio" name="gender" value="Female">Female</td>
+			</tr>
+			<tr>
+				<td align="right">Designation:</td>
+				<td align="left"><select name="designation">
+						<option value="none" selected disabled hidden>-select-</option>
+						<option value="Software Developer">Software Developer</option>
+						<option value="Quality Analyst">Quality Analyst</option>
+				</select></td>
+			<tr>
+			<tr>
+				<td align="right">Experience:</td>
+				<td align="left"><input type="number" name="experience"
+					placeholder="Enter experience"></td>
+			</tr>
+			<tr>
+				<td align="right">
+			<input type="submit" value="Register">
+			</td>
+			<td align="left"><input type="reset" value="Reset"></td>
+			</tr><tr>
+				<td></td>
+				<td><br>
+				<br>Already Registered? <a href="Manager_Login.html">Login</a></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>EmployeeManagerMVC</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  	<servlet>
+		<servlet-name>EmployeeRegister</servlet-name>
+		<servlet-class>com.motivity.employee.EmployeeRegisterController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmployeeRegister</servlet-name>
+		<url-pattern>/Employee_Register</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ManagerRegister</servlet-name>
+		<servlet-class>com.motivity.manager.ManagerRegisterController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerRegister</servlet-name>
+		<url-pattern>/Manager_Register</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EmployeeLogin</servlet-name>
+		<servlet-class>com.motivity.employee.EmployeeLoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmployeeLogin</servlet-name>
+		<url-pattern>/Employee_Login</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ManagerLogin</servlet-name>
+		<servlet-class>com.motivity.manager.ManagerLoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerLogin</servlet-name>
+		<url-pattern>/Manager_Login</url-pattern>
+	</servlet-mapping>
+  
+</web-app>
