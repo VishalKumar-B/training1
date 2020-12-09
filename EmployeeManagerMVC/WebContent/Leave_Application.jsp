@@ -11,36 +11,38 @@
 	</center>
 	<br>
 	<br>
-	<%@include file="connection.jsp"%>
+	<%@page import = "com.motivity.employee.LeaveApplicationBean,
+					com.motivity.employee.LeaveApplicationManagerNameBean, 
+					java.util.ArrayList,java.util.Iterator"%>
 	<%
-		int eid = (int) session.getAttribute("eid");
-	ps = connection.prepareStatement("select * from employee where eid=?");
-	ps.setInt(1, eid);
-	ResultSet rs = ps.executeQuery();
-	if (rs.next()) {
+		int eid = (Integer) session.getAttribute("eid");
+
+		LeaveApplicationBean lab = new LeaveApplicationBean();
+		lab.setEid(eid);
+		lab.leaveApplication();
 	%>
-	<form action="./Apply_Leave.jsp?lr=<%=rs.getInt("leaves_remaining")%>"
+	<form action="./Apply_Leave.jsp?lr=<%=lab.getLeaves_remaining()%>"
 		align="center">
 		<table align="center">
 			<tr>
 				<td></td>
-				<td><label>Leaves Remaining:<%=rs.getInt("leaves_remaining")%></label>
+				<td><label>Leaves Remaining:<%=lab.getLeaves_remaining()%></label>
 					<br> <br></td>
 			</tr>
 			<tr>
 				<td align="right">Name:</td>
 				<td align="left"><input type="text" name="name"
-					value="<%=rs.getString("name")%>"></td>
+					value="<%=lab.getName()%>"></td>
 			</tr>
 			<tr>
 				<td align="right">Email:</td>
 				<td align="left"><input type="email" name="email"
-					value="<%=rs.getString("email")%>"></td>
+					value="<%=lab.getEmail()%>"></td>
 			</tr>
 			<tr>
 				<td align="right">Phone:</td>
 				<td align="left"><input type="number" name="phone"
-					value="<%=rs.getInt("phone")%>"></td>
+					value="<%=lab.getPhone()%>"></td>
 			</tr>
 			<tr>
 				<td align="right">Number Of Days:</td>
@@ -62,14 +64,16 @@
 				<td align="right">Manager Name:</td>
 				<td align="left"><select name="manager_name">
 						<option value="none" selected disabled hidden>-select-</option>
-						<%
-					String query = "select name from manager";
-				ps = connection.prepareStatement(query);
-				ResultSet rs1 = ps.executeQuery();
-				while (rs1.next()) {
+				<%
+				LeaveApplicationManagerNameBean lamb = new LeaveApplicationManagerNameBean();
+				ArrayList<LeaveApplicationManagerNameBean> al = lamb.managerNameDisplay();
+				Iterator i = al.iterator();
+
+				while (i.hasNext()) {
+					lamb = (LeaveApplicationManagerNameBean) i.next();
 				%>
-						<option value="<%=rs1.getString("name")%>"><%=rs1.getString("name")%></option>
-				<%} %>>
+						<option value="<%=lamb.getManager_name()%>"><%=lamb.getManager_name()%></option>
+				<%} %>
 				</select>
 
 			</tr>
@@ -79,8 +83,5 @@
 			</tr>
 		</table>
 	</form>
-	<%
-		}
-	%>
 </body>
 </html>

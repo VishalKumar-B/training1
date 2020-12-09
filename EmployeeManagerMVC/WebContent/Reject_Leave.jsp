@@ -1,11 +1,14 @@
-<%@include file="connection.jsp"%>
+<%@page import="com.motivity.manager.RejectLeaveBean"%>
 <%
 	int lid = Integer.parseInt(request.getParameter("lid"));
-String sql = "update leaves set status=? where lid=?";
-ps = connection.prepareStatement(sql);
-ps.setString(1, "Rejected");
-ps.setInt(2, lid);
-int x = ps.executeUpdate();
-if (x != 0)
+
+RejectLeaveBean rlb = new RejectLeaveBean();
+rlb.setLid(lid);
+
+boolean status = false;
+
+status = rlb.rejectLeave();
+
+if (status)
 	response.sendRedirect("View_Leaves.jsp?msg=Rejected");
 %>
