@@ -15,7 +15,7 @@
 	<br>
 	<br>
 
-	<%@include file="connection.jsp"%>
+	
 	<table border="1" align="center">
 		<tr>
 			<td>Patient Name</td>

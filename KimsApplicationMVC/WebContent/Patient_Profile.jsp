@@ -16,7 +16,7 @@
 	<br>
 	<br>
 	<%@ page import="java.sql.*"%>
-	<%@include file="connection.jsp"%>
+	
 	<table align="center" border="1.0" cellpadding="2">
 		<tr>
 			<td>Id</td>
