@@ -12,7 +12,7 @@ public class ManagerProfileBean {
 	private int mid;
 	private String name;
 	private String email;
-	private long phone;
+	private String phone;
 	private String date_of_birth;
 	private int age;
 	private String gender;
@@ -42,11 +42,11 @@ public class ManagerProfileBean {
 		this.email = email;
 	}
 
-	public long getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
-	public void setPhone(long phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
@@ -97,7 +97,7 @@ public class ManagerProfileBean {
 			setMid(rs.getInt("mid"));
 			setName(rs.getString("name"));
 			setEmail(rs.getString("email"));
-			setPhone(rs.getInt("phone"));
+			setPhone(rs.getString("phone"));
 			setDate_of_birth(rs.getString("date_of_birth"));
 			setAge(rs.getInt("age"));
 			setGender(rs.getString("gender"));

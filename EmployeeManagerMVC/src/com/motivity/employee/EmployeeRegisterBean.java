@@ -11,7 +11,7 @@ public class EmployeeRegisterBean {
 	private String name;
 	private String password;
 	private String email;
-	private long phone;
+	private String phone;
 	private String date_of_birth;
 	private int age;
 	private String gender;
@@ -42,11 +42,11 @@ public class EmployeeRegisterBean {
 		this.email = email;
 	}
 
-	public long getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
-	public void setPhone(long phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
@@ -90,7 +90,7 @@ public class EmployeeRegisterBean {
 		this.experience = experience;
 	}
 
-	public boolean employeeRegister(String name, String password, String email, long phone, String date_of_birth,
+	public boolean employeeRegister(String name, String password, String email, String phone, String date_of_birth,
 			int age, String gender, String designation, int experience) throws SQLException, ClassNotFoundException {
 
 		Connection connection = DatabaseConnection.connectivity();
@@ -102,7 +102,7 @@ public class EmployeeRegisterBean {
 		ps.setString(1, name);
 		ps.setString(2, password);
 		ps.setString(3, email);
-		ps.setLong(4, phone);
+		ps.setString(4, phone);
 		ps.setString(5, date_of_birth);
 		ps.setInt(6, age);
 		ps.setString(7, gender);

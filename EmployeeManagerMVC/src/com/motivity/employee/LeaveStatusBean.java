@@ -1,4 +1,4 @@
-package com.motivity.manager;
+package com.motivity.employee;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,10 +8,9 @@ import java.util.ArrayList;
 
 import com.databaseconnection.DatabaseConnection;
 
-public class ViewLeavesBean {
-	
+public class LeaveStatusBean {
+
 	private int eid;
-	private int lid;
 	private String name;
 	private String email;
 	private String phone;
@@ -19,30 +18,13 @@ public class ViewLeavesBean {
 	private String from_date;
 	private String to_date;
 	private String status;
-	private String manager_name;
-	
+
 	public int getEid() {
 		return eid;
 	}
 
 	public void setEid(int eid) {
 		this.eid = eid;
-	}
-	
-	public int getLid() {
-		return lid;
-	}
-
-	public void setLid(int lid) {
-		this.lid = lid;
-	}
-
-	public String getManager_name() {
-		return manager_name;
-	}
-
-	public void setManager_name(String manager_name) {
-		this.manager_name = manager_name;
 	}
 
 	public String getName() {
@@ -101,33 +83,31 @@ public class ViewLeavesBean {
 		this.status = status;
 	}
 	
-	public ArrayList<ViewLeavesBean> viewLeaves() throws ClassNotFoundException, SQLException {
+	public ArrayList<LeaveStatusBean> leaveStatus()
+			throws ClassNotFoundException, SQLException { 
 		
 		Connection connection = DatabaseConnection.connectivity();
-		
-		String sql = "select * from leaves where manager_name=?";
-		
+
+		String sql = "select * from leaves where eid=?";
 		PreparedStatement ps = connection.prepareStatement(sql);
-		ps.setString(1, manager_name);
-		
+		ps.setInt(1, getEid());
 		ResultSet rs = ps.executeQuery();
-		
-		ArrayList<ViewLeavesBean> al = new ArrayList<>();
+
+		ArrayList<LeaveStatusBean> al = new ArrayList<>();
 		
 		while (rs.next()) { 
 			
-			ViewLeavesBean vlb1 = new ViewLeavesBean();
-			vlb1.setName(rs.getString("name"));
-			vlb1.setEmail(rs.getString("email"));
-			vlb1.setPhone(rs.getString("phone"));
-			vlb1.setNo_of_days(rs.getInt("no_of_days"));
-			vlb1.setFrom_date(rs.getString("from_date"));
-			vlb1.setTo_date(rs.getString("to_date"));
-			vlb1.setStatus(rs.getString("status"));
-			vlb1.setEid(rs.getInt("eid"));
-			vlb1.setLid(rs.getInt("lid"));
+			LeaveStatusBean lsb1 = new LeaveStatusBean();
 			
-			al.add(vlb1);
+			lsb1.setName(rs.getString("name"));
+			lsb1.setEmail(rs.getString("email"));
+			lsb1.setPhone(rs.getString("phone"));
+			lsb1.setNo_of_days(rs.getInt("no_of_days"));
+			lsb1.setFrom_date(rs.getString("from_date"));
+			lsb1.setTo_date(rs.getString("to_date"));
+			lsb1.setStatus(rs.getString("status"));
+			
+			al.add(lsb1);
 		}
 		return al;
 	}

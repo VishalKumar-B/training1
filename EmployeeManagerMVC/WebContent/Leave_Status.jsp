@@ -12,7 +12,7 @@
 		<a href="index.html">logout</a>
 	</center>
 	<br><br>
-	<%@include file="connection.jsp"%>
+	<%@page import = "com.motivity.employee.LeaveStatusBean,java.util.ArrayList,java.util.Iterator"%>
 	<table border="1" align="center">
 		<tr>
 			<td>Employee Name:</td>
@@ -25,19 +25,22 @@
 		</tr>
 		<%
 		int eid=(Integer)session.getAttribute("eid");
-		ps = connection.prepareStatement("select * from leaves where eid=?");
-		ps.setInt(1,eid);
-		ResultSet rs = ps.executeQuery();
-		while (rs.next()) {
+		LeaveStatusBean lsb2 = new LeaveStatusBean();
+		lsb2.setEid(eid);
+		ArrayList<LeaveStatusBean> al = lsb2.leaveStatus(); 
+		Iterator i = al.iterator();
+		
+		while (i.hasNext()) {
+			lsb2 = (LeaveStatusBean) i.next();
 		%>
 		<tr>
-			<td><%=rs.getString("name") %></td>
-			<td><%=rs.getString("email") %></td>
-			<td><%=rs.getInt("phone") %></td>
-			<td><%=rs.getInt("no_of_days") %></td>
-			<td><%=rs.getString("from_date") %></td>
-			<td><%=rs.getString("to_date") %></td>
-			<td><%=rs.getString("status") %></td>
+			<td><%=lsb2.getName() %></td>
+			<td><%=lsb2.getEmail() %></td>
+			<td><%=lsb2.getPhone() %></td>
+			<td><%=lsb2.getNo_of_days() %></td>
+			<td><%=lsb2.getFrom_date() %></td>
+			<td><%=lsb2.getTo_date() %></td>
+			<td><%=lsb2.getStatus() %></td>
 		</tr>
 
 		<%

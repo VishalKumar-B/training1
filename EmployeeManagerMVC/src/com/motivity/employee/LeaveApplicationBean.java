@@ -12,7 +12,7 @@ public class LeaveApplicationBean {
 	private int eid;
 	private String name;
 	private String email;
-	private int phone;
+	private String phone;
 	private int leaves_remaining;
 
 
@@ -40,11 +40,11 @@ public class LeaveApplicationBean {
 		this.email = email;
 	}
 
-	public int getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
-	public void setPhone(int phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
@@ -67,7 +67,7 @@ public class LeaveApplicationBean {
 
 			setName(rs.getString("name"));
 			setEmail(rs.getString("email"));
-			setPhone(rs.getInt("phone"));
+			setPhone(rs.getString("phone"));
 			setLeaves_remaining(rs.getInt("leaves_remaining"));
 		}
 	}

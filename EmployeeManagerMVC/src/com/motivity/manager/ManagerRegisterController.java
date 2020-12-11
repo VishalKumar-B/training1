@@ -17,7 +17,7 @@ public class ManagerRegisterController extends HttpServlet {
 		String name = request.getParameter("name");
 		String password = request.getParameter("password");
 		String email = request.getParameter("email");
-		long phone = Long.parseLong(request.getParameter("phone"));
+		String phone = request.getParameter("phone");
 		String date_of_birth = request.getParameter("date_of_birth");
 		int age = Integer.parseInt(request.getParameter("age"));
 		String gender = request.getParameter("gender");

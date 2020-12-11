@@ -10,7 +10,7 @@ public class ApplyLeaveBean {
 	private int eid;
 	private String name;
 	private String email;
-	private long phone;
+	private String phone;
 	private int no_of_days;
 	private String from_date;
 	private String to_date;
@@ -40,11 +40,11 @@ public class ApplyLeaveBean {
 		this.email = email;
 	}
 
-	public long getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
-	public void setPhone(long phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
@@ -90,7 +90,7 @@ public class ApplyLeaveBean {
 		PreparedStatement ps = connection.prepareStatement(sql);
 		ps.setString(1, getName());
 		ps.setString(2, getEmail());
-		ps.setLong(3, getPhone());
+		ps.setString(3, getPhone());
 		ps.setInt(4, getNo_of_days());
 		ps.setString(5, getFrom_date());
 		ps.setString(6, getTo_date());

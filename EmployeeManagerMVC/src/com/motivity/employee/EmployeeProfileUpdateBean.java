@@ -11,7 +11,7 @@ public class EmployeeProfileUpdateBean {
 	private int eid;
 	private String name;
 	private String email;
-	private long phone;
+	private String phone;
 	private String date_of_birth;
 	private int age;
 	private String gender;
@@ -42,11 +42,11 @@ public class EmployeeProfileUpdateBean {
 		this.email = email;
 	}
 
-	public long getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
-	public void setPhone(long phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
@@ -100,7 +100,7 @@ public class EmployeeProfileUpdateBean {
 		
 		ps.setString(1, getName());
 		ps.setString(2, getEmail());
-		ps.setLong(3, getPhone());
+		ps.setString(3, getPhone());
 		ps.setString(4, getDate_of_birth());
 		ps.setInt(5, getAge());
 		ps.setString(6, getGender());

@@ -2,7 +2,7 @@
 <%
 	String name = request.getParameter("name");
 String email = request.getParameter("email");
-long phone = Long.parseLong(request.getParameter("phone"));
+String phone = request.getParameter("phone");
 int no_of_days = Integer.parseInt(request.getParameter("no_of_days"));
 String from_date = request.getParameter("from_date");
 String to_date = request.getParameter("to_date");
