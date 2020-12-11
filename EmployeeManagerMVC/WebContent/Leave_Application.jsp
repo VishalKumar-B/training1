@@ -32,17 +32,17 @@
 			<tr>
 				<td align="right">Name:</td>
 				<td align="left"><input type="text" name="name"
-					value="<%=lab.getName()%>"></td>
+					value="<%=lab.getName()%>" readonly></td>
 			</tr>
 			<tr>
 				<td align="right">Email:</td>
 				<td align="left"><input type="email" name="email"
-					value="<%=lab.getEmail()%>"></td>
+					value="<%=lab.getEmail()%>" readonly></td>
 			</tr>
 			<tr>
 				<td align="right">Phone:</td>
 				<td align="left"><input type="number" name="phone"
-					value="<%=lab.getPhone()%>"></td>
+					value="<%=lab.getPhone()%>" readonly></td>
 			</tr>
 			<tr>
 				<td align="right">Number Of Days:</td>
