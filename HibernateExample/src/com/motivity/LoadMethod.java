@@ -8,7 +8,7 @@ import org.hibernate.cfg.Configuration;
 public class LoadMethod {
 	/*
 		It  is also used to fetch data from the database for the given identifier 
-		It will throw object not found exception 
+		It will throw object not found exception when the data doesn't exist in database
 		It always returns proxy object so this method is lazy load the object
 		If you are sure that object exist then use load() method 
 	*/
