@@ -4,7 +4,7 @@
 	int id = (Integer) session.getAttribute("sid");
 String name = request.getParameter("name");
 String email = request.getParameter("email");
-long phone = Long.parseLong(request.getParameter("phone"));
+String phone = request.getParameter("phone");
 String specialisation = request.getParameter("specialisation");
 
 DoctorProfileUpdateBean dpu = new DoctorProfileUpdateBean();
