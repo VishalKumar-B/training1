@@ -12,7 +12,7 @@ public class DoctorProfileBean {
 	private int id;
 	private String name;
 	private String email;
-	private int phone;
+	private String phone;
 	private String specialisation;
 
 	public int getId() {
@@ -39,11 +39,11 @@ public class DoctorProfileBean {
 		this.email = email;
 	}
 
-	public int getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
-	public void setPhone(int phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
@@ -70,7 +70,7 @@ public class DoctorProfileBean {
 
 			setName(rs.getString("name"));
 			setEmail(rs.getString("email"));
-			setPhone(rs.getInt("phone"));
+			setPhone(rs.getString("phone"));
 			setSpecialisation(rs.getString("specialisation"));
 
 		}

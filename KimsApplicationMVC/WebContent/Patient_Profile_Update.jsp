@@ -4,7 +4,7 @@
 String name = request.getParameter("name");
 String email = request.getParameter("email");
 int age = Integer.parseInt(request.getParameter("age"));
-long phone = Long.parseLong(request.getParameter("phone"));
+String phone = request.getParameter("phone");
 
 PatientProfileUpdateBean ppu = new PatientProfileUpdateBean();
 ppu.setId(id);

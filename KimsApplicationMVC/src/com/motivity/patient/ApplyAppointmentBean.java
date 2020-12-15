@@ -10,7 +10,7 @@ public class ApplyAppointmentBean {
 
 	private int id;
 	private String name;
-	private Long phone;
+	private String phone;
 	private String email;
 	private String gender;
 	private String blood_group;
@@ -34,11 +34,11 @@ public class ApplyAppointmentBean {
 		this.name = name;
 	}
 
-	public Long getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
-	public void setPhone(Long phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
@@ -98,7 +98,7 @@ public class ApplyAppointmentBean {
 		
 		PreparedStatement ps = connection.prepareStatement(sql);
 		ps.setString(1, getName());
-		ps.setLong(2, getPhone());
+		ps.setString(2, getPhone());
 		ps.setString(3, getEmail());
 		ps.setString(4, getGender());
 		ps.setString(5, getBlood_group());

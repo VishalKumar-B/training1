@@ -11,7 +11,7 @@ public class DoctorProfileUpdateBean {
 	private int id;
 	private String name;
 	private String email;
-	private long phone;
+	private String phone;
 	private String specialisation;
 
 	public int getId() {
@@ -38,11 +38,11 @@ public class DoctorProfileUpdateBean {
 		this.email = email;
 	}
 
-	public long getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
-	public void setPhone(long phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
@@ -64,7 +64,7 @@ public class DoctorProfileUpdateBean {
 		
 		ps.setString(1, getName());
 		ps.setString(2, getEmail());
-		ps.setLong(3, getPhone());
+		ps.setString(3, getPhone());
 		ps.setString(4, getSpecialisation());
 		ps.setInt(5, getId());
 		

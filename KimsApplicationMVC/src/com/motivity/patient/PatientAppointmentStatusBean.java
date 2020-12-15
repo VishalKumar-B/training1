@@ -12,7 +12,7 @@ public class PatientAppointmentStatusBean {
 
 	private int pid;
 	private String name;
-	private int phone;
+	private String phone;
 	private String email;
 	private String gender;
 	private String blood_group;
@@ -38,11 +38,11 @@ public class PatientAppointmentStatusBean {
 		this.name = name;
 	}
 
-	public int getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
-	public void setPhone(int phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
@@ -126,7 +126,7 @@ public class PatientAppointmentStatusBean {
 			PatientAppointmentStatusBean pasb1 = new PatientAppointmentStatusBean();
 
 			pasb1.setName(rs.getString("name"));
-			pasb1.setPhone(rs.getInt("phone"));
+			pasb1.setPhone(rs.getString("phone"));
 			pasb1.setEmail(rs.getString("email"));
 			pasb1.setGender(rs.getString("gender"));
 			pasb1.setBlood_group(rs.getString("blood_group"));

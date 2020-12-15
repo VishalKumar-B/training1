@@ -16,7 +16,7 @@ public class DoctorRegisterController extends HttpServlet {
 		String name = request.getParameter("name");
 		String password = request.getParameter("password");
 		String email = request.getParameter("email");
-		long phone = Long.parseLong(request.getParameter("phone"));
+		String phone = request.getParameter("phone");
 		String specialisation = request.getParameter("specialization");
 		
 		DoctorRegisterBean drb = new DoctorRegisterBean();

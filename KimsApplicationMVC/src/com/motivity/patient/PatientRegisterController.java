@@ -19,7 +19,7 @@ public class PatientRegisterController extends HttpServlet {
 		String password = request.getParameter("password");
 		String email = request.getParameter("email");
 		int age = Integer.parseInt(request.getParameter("age"));
-		long phone = Long.parseLong(request.getParameter("phone"));
+		String phone = request.getParameter("phone");
 
 		PatientRegisterBean prb = new PatientRegisterBean();
 		prb.setName(name);

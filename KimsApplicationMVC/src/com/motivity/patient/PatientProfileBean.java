@@ -13,7 +13,7 @@ public class PatientProfileBean {
 	private String name;
 	private String email;
 	private int age;
-	private long phone;
+	private String phone;
 
 	public int getId() {
 		return id;
@@ -47,11 +47,11 @@ public class PatientProfileBean {
 		this.age = age;
 	}
 
-	public long getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
-	public void setPhone(long phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 	
@@ -71,7 +71,7 @@ public class PatientProfileBean {
 			setName(rs.getString("name"));
 			setEmail(rs.getString("email"));
 			setAge(rs.getInt("age"));
-			setPhone(rs.getInt("phone"));
+			setPhone(rs.getString("phone"));
 		}
 	}
 }

@@ -8,11 +8,11 @@ import com.databaseconnection.DatabaseConnection;
 
 public class PatientProfileUpdateBean {
 
-	int id;
-	String name;
-	String email;
-	int age;
-	long phone;
+	private int id;
+	private String name;
+	private String email;
+	private int age;
+	private String phone;
 
 	public int getId() {
 		return id;
@@ -46,11 +46,11 @@ public class PatientProfileUpdateBean {
 		this.age = age;
 	}
 
-	public long getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
-	public void setPhone(long phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 	
@@ -65,7 +65,7 @@ public class PatientProfileUpdateBean {
 		ps.setString(1, getName());
 		ps.setString(2, getEmail());
 		ps.setInt(3, getAge());
-		ps.setLong(4, getPhone());
+		ps.setString(4, getPhone());
 		ps.setInt(5, getId());		
 		
 		int x = ps.executeUpdate();

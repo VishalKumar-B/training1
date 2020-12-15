@@ -11,7 +11,7 @@ import com.databaseconnection.DatabaseConnection;
 public class ViewAppointmentBean {
 
 	private String name;
-	private int phone;
+	private String phone;
 	private String email;
 	private String gender;
 	private String blood_group;
@@ -38,11 +38,11 @@ public class ViewAppointmentBean {
 		this.name = name;
 	}
 
-	public int getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
-	public void setPhone(int phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
@@ -127,7 +127,7 @@ public class ViewAppointmentBean {
 			ViewAppointmentBean vab1 = new ViewAppointmentBean();
 			vab1.setAid(rs.getInt("aid"));
 			vab1.setName(rs.getString("name"));
-			vab1.setPhone(rs.getInt("phone"));
+			vab1.setPhone(rs.getString("phone"));
 			vab1.setEmail(rs.getString("email"));
 			vab1.setGender(rs.getString("gender"));
 			vab1.setBlood_group(rs.getString("blood_group"));

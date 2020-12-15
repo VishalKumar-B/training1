@@ -12,7 +12,7 @@ public class PatientRegisterBean {
 	private String password;
 	private String email;
 	private int age;
-	private long phone;
+	private String phone;
 
 	public String getName() {
 		return name;
@@ -46,15 +46,15 @@ public class PatientRegisterBean {
 		this.age = age;
 	}
 
-	public long getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
-	public void setPhone(long phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
-	public boolean patientRegister(String name, String password, String email, int age, long phone)
+	public boolean patientRegister(String name, String password, String email, int age, String phone)
 			throws ClassNotFoundException, SQLException {
 
 		Connection connection = DatabaseConnection.connectivity();
@@ -66,7 +66,7 @@ public class PatientRegisterBean {
 		ps.setString(2, password);
 		ps.setString(3, email);
 		ps.setInt(4, age);
-		ps.setLong(5, phone);
+		ps.setString(5, phone);
 
 		int x = ps.executeUpdate();
 

@@ -2,7 +2,7 @@
 <%
 	int id = (Integer) session.getAttribute("sid");
 String name = request.getParameter("name");
-Long phone = Long.parseLong(request.getParameter("phone"));
+String phone = request.getParameter("phone");
 String email = request.getParameter("email");
 String gender = request.getParameter("gender");
 String blood_group = request.getParameter("blood_group");

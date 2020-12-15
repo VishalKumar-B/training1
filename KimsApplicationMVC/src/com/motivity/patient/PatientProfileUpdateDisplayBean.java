@@ -9,11 +9,11 @@ import com.databaseconnection.DatabaseConnection;
 
 public class PatientProfileUpdateDisplayBean {
 
-	int id;
-	String name;
-	String email;
-	int age;
-	long phone;
+	private int id;
+	private String name;
+	private String email;
+	private int age;
+	private String phone;
 
 	public int getId() {
 		return id;
@@ -47,11 +47,11 @@ public class PatientProfileUpdateDisplayBean {
 		this.age = age;
 	}
 
-	public long getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
-	public void setPhone(long phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 	
@@ -66,7 +66,7 @@ public class PatientProfileUpdateDisplayBean {
 			setName(rs.getString("name"));
 			setEmail(rs.getString("email"));
 			setAge(rs.getInt("age"));
-			setPhone(rs.getInt("phone"));
+			setPhone(rs.getString("phone"));
 		}
 	}
 }

@@ -59,7 +59,7 @@
  	session.setAttribute("eid", vlb2.getEid());
  session.setAttribute("no_of_days", vlb2.getNo_of_days());
  %>Accept
-			</a> <a href="Reject_Leave.jsp?lid=<%=vlb2.getLid()%>">Rejected </a></td>
+			</a> <a href="Reject_Leave.jsp?lid=<%=vlb2.getLid()%>">Reject </a></td>
 		</tr>
 		<%
 			}
