@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.motivity.employee.EmployeePOJO"
+		table="Employee25">
+		
+		<id name="id" column="id"></id>
+		<property name="name" column="name"></property>
+		<property name="email" column="email"></property>
+		<property name="phone" column="phone"></property>
+		<property name="date_of_birth" column="dob"></property>
+		<property name="age" column="age"></property>
+		<property name="gender" column="gender"></property>
+		<property name="designation" column="designation"></property>
+		<property name="experience" column="experience"></property>
+	
+	</class>
+
+</hibernate-mapping>
