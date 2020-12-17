@@ -34,10 +34,10 @@ public class Insert {
 			emp.setDesignation(sc.next());
 			emp.setExperience(sc.nextInt());
 
-			int i =(Integer)se.save(emp);
+			int a =(Integer)se.save(emp);
 			tx.commit();
 			
-			if(i>0)
+			if(a>0)
 				System.out.println("record inserted");
 			
 			System.out.println("Do you want to continue (y/n)");
