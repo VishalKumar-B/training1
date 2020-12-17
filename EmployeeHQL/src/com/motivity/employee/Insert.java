@@ -37,6 +37,7 @@ public class Insert {
 			se.save(emp);
 			tx.commit();
 			
+			
 			System.out.println("Do you want to continue (y/n)");
 			choice = sc.next();
 		} while (choice.equals("y"));
