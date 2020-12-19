@@ -13,7 +13,7 @@ public class EmployeeMain {
 			option=sc.nextInt();
 			switch(option) {
 			
-			case 1: 
+			case 1:   
 				Display.displayOperation();
 				break;
 			case 2:
