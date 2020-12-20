@@ -12,7 +12,7 @@
 		<h2>Welcome To Courier Details Update</h2>
 	</center>
 	<br>
-	<form action=" " method="post" align="center">
+	<form action="./UpdateCourierDetailsController" method="post" align="center">
 		<br>
 		<table align="center">
 			<tr>

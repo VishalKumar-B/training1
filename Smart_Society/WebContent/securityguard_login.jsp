@@ -14,17 +14,17 @@
 	</center>
 	<br>
 	<br>
-	<form action=" " method="post" align="center">
+	<form action="./SecurityGuardLoginController" method="post" align="center">
 		<table align="center">
 
 			<tr>
 				<td align="right">Email:</td>
-				<td align="left"><input type="email" name="email"
+				<td align="left"><input type="email" name="securityguard_email"
 					placeholder="Enter email"></td>
 			</tr>
 			<tr>
 				<td align="right">Password:</td>
-				<td align="left"><input type="password" name="password"
+				<td align="left"><input type="password" name="securityguard_password"
 					placeholder="Enter password"></td>
 			</tr>
 			<tr>

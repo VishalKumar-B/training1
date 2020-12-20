@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.motivity.securityguard.CourierPOJO"
+		table="courier">
+		
+		<id name="courier_id" column="courier_id"></id>
+		<property name="courier_receiver_name" column="courier_receiver_name"></property>
+		<property name="courier_flat_number" column="courier_flat_number"></property>
+		<property name="courier_from_address" column="courier_from_address"></property>
+		<property name="courier_received_date" column="courier_received_date"></property>
+		<property name="courier_received_time" column="courier_received_time"></property>
+		
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.motivity.securityguard.VisitorsPOJO"
+		table="visitor">
+		
+		<id name="visitor_id" column="visitor_id"></id>
+		<property name="visitor_name" column="visitor_name"></property>
+		<property name="visitor_mobile" column="visitor_mobile"></property>
+		<property name="visitor_aadhar_id" column="visitor_aadhar_id"></property>
+		<property name="visitor_visit_time" column="visitor_visit_time"></property>
+		<property name="visitor_visit_name" column="visitor_visit_name"></property>
+		<property name="visitor_visit_flat" column="visitor_visit_flat"></property>
+		
+	</class>
+
+</hibernate-mapping>

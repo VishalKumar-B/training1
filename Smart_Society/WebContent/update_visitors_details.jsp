@@ -12,7 +12,7 @@
 		<h2>Welcome To Visitor's Details Update</h2>
 	</center>
 	<br>
-	<form action=" " method="post" align="center">
+	<form action="./UpdateVisitorDetailsController" method="post" align="center">
 		<br>
 		<table align="center">
 			<tr>
