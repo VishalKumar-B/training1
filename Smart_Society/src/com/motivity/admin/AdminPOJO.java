@@ -38,5 +38,5 @@ public class AdminPOJO {
 	public void setAdmin_password(String admin_password) {
 		this.admin_password = admin_password;
 	}
-
+	
 }
