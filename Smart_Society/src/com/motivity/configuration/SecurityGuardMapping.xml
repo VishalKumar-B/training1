@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.motivity.securityguard.SecurityGuardPOJO"
+		table="securityguard">
+		
+		<id name="securityguard_id" column="securityguard_id"></id>
+		<property name="securityguard_name" column="securityguard_name"></property>
+		<property name="securityguard_phone" column="securityguard_phone"></property>
+		<property name="securityguard_email" column="securityguard_email"></property>
+		<property name="securityguard_address" column="securityguard_address"></property>
+		<property name="securityguard_education" column="securityguard_education"></property>
+		<property name="securityguard_aadhar" column="securityguard_aadhar"></property>
+		<property name="securityguard_experience" column="securityguard_experience"></property>
+		<property name="securityguard_password" column="securityguard_password"></property>
+	
+	</class>
+
+</hibernate-mapping>
