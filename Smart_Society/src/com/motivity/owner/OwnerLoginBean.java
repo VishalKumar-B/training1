@@ -32,7 +32,8 @@ public class OwnerLoginBean {
 		while(i.hasNext())	{
 			OwnerPOJO s = i.next();
 			op.setId(s.getId());
-			System.out.println(s.getId()); 
+			op.setFlatnumber(s.getFlatnumber());
+			System.out.println(s.getId() +" "+s.getFlatnumber()); 
 		}
 		
 		int result = li.size();
