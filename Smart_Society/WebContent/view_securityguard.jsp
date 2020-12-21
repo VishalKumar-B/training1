@@ -29,6 +29,7 @@
 			<td>Education:</td>
 			<td>Aadhar:</td>
 			<td>Experience:</td>
+			<td>Action:</td>
 		<tr>
 			<%@page
 				import="com.motivity.admin.ViewSecurityGuardBean,
@@ -48,7 +49,8 @@
 			<td><%=sp.getSecurityguard_address()%></td>
 			<td><%=sp.getSecurityguard_education()%></td>
 			<td><%=sp.getSecurityguard_aadhar()%></td>
-			<td><%=sp.getSecurityguard_experience()%>
+			<td><%=sp.getSecurityguard_experience()%></td>
+			<td><a href="deletesecurityguardbean.jsp?id=<%=sp.getSecurityguard_id()%>">delete</a></td>
 		</tr>
 		<%
 			}

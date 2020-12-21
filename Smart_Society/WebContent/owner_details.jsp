@@ -30,6 +30,7 @@
 			<td>Flat Type:</td>
 			<td>Floor Number:</td>
 			<td>Gender:</td>
+			<td>Action</td>
 		<tr>
 			<%@page
 				import="com.motivity.owner.OwnerPOJO,
@@ -51,6 +52,7 @@
 			<td><%=op.getFlattype()%></td>
 			<td><%=op.getFloornumber()%>
 			<td><%=op.getGender() %></td>
+			<td><a href="deleteownerbean.jsp?id=<%=op.getId()%>">delete</a></td>
 		</tr>
 		<%
 			}
