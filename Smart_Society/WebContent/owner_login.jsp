@@ -14,7 +14,7 @@
 	</center>
 	<br>
 	<br>
-	<form action=" " method="post" align="center">
+	<form action="./OwnerLoginController" method="post" align="center">
 		<table align="center">
 			
 			<tr>

@@ -10,8 +10,9 @@
 <br>
 <h1>Welcome to Admin Home</h1>
 <a href="securityguard_register.jsp">Add New Security Guard</a> |
-<a href="">Owner Details</a> |
-<a href="">Paymnet Details</a> |
+<a href="view_securityguard.jsp">View Securityguard Details</a> |
+<a href="owner_details.jsp">Owner Details</a> |
+<a href="payment_details.jsp">Payment Details</a> |
 <a href="index.html">Logout</a>
 </body>
 </html>

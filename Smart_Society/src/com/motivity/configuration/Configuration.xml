@@ -19,5 +19,6 @@
 		<mapping resource="/com/motivity/configuration/SecurityGuardMapping.xml" />
 		<mapping resource="/com/motivity/configuration/CourierMapping.xml" />
 		<mapping resource="/com/motivity/configuration/VisitorMapping.xml" />
+		<mapping resource="/com/motivity/configuration/OwnerMapping.xml" />
 	</session-factory>
 </hibernate-configuration>

@@ -12,7 +12,7 @@
 		<h2>Welcome To Owner Registration</h2>
 	</center>
 	<br>
-	<form action=" " method="post" align="center">
+	<form action="./OwnerRegisterController" method="post" align="center">
 		<br>
 		<table align="center">
 			<tr>
@@ -49,7 +49,7 @@
 			</tr>
 			<tr>
 				<td align="right">Mobile Number:</td>
-				<td align="left"><input type="text" name="phone"
+				<td align="left"><input type="number" name="mobilenumber"
 					placeholder="Enter mobile number "></td>
 			</tr>
 			<tr>
@@ -71,10 +71,10 @@
 				<td align="right">Floor Number:</td>
 				<td align="left"><select name="FLOORNUMBER">
 						<option value="none" selected disabled hidden>-select-</option>
-						<option value="ONE">ONE</option>
-						<option value="TWO">TWO</option>
-						<option value="THREE">THREE</option>
-						<option value="FOUR">FOUR</option>
+						<option value="1">ONE</option>
+						<option value="2">TWO</option>
+						<option value="2">THREE</option>
+						<option value="4">FOUR</option>
 				</select></td>
 			</tr>
 			<tr>

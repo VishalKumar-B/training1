@@ -27,10 +27,9 @@
 		</tr>
 
 		<%@page
-			import="com.motivity.admin.AdminLoginBean,com.motivity.admin.AdminPOJO"%>
+			import="com.motivity.admin.AdminLogin,com.motivity.admin.AdminPOJO"%>
 		<%
-			AdminLoginBean alb = new AdminLoginBean();
-			Object ap = alb.adminDetails();
+			AdminLogin alb = new AdminLogin();
 		%>
 		<tr>
 			<td><%=%></td>

@@ -39,8 +39,8 @@
 		<servlet-name>UpdateCourier</servlet-name>
 		<url-pattern>/UpdateCourierDetailsController</url-pattern>
 	</servlet-mapping>
-	
-		<servlet>
+
+	<servlet>
 		<servlet-name>UpdateVisitor</servlet-name>
 		<servlet-class>com.motivity.securityguard.UpdateVisitorDetailsController</servlet-class>
 	</servlet>
@@ -48,13 +48,31 @@
 		<servlet-name>UpdateVisitor</servlet-name>
 		<url-pattern>/UpdateVisitorDetailsController</url-pattern>
 	</servlet-mapping>
-	
-		<servlet>
+
+	<servlet>
 		<servlet-name>SecurityGuardLogin</servlet-name>
 		<servlet-class>com.motivity.securityguard.SecurityGuardLoginController</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>SecurityGuardLogin</servlet-name>
 		<url-pattern>/SecurityGuardLoginController</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>OwnerRegister</servlet-name>
+		<servlet-class>com.motivity.owner.OwnerRegisterController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OwnerRegister</servlet-name>
+		<url-pattern>/OwnerRegisterController</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>OwnerLogin</servlet-name>
+		<servlet-class>com.motivity.owner.OwnerLoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OwnerLogin</servlet-name>
+		<url-pattern>/OwnerLoginController</url-pattern>
 	</servlet-mapping>
 </web-app>

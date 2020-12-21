@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.motivity.owner.OwnerPOJO"
+		table="owner">
+		
+		<id name="id" column="id"></id>
+		<property name="name" column="name"></property>
+		<property name="mobilenumber" column="phone"></property>
+		<property name="emailid" column="email"></property>
+		<property name="flatnumber" column="flatnumber"></property>
+		<property name="dateofjoing" column="date_of_joining"></property>
+		<property name="adharnumber" column="adhar"></property>
+		<property name="flattype" column="type"></property>
+		<property name="floornumber" column="FLOORNUMBER"></property>
+		<property name="gender" column="gender"></property>
+		<property name="password" column="password"></property>
+	</class>
+
+</hibernate-mapping>
