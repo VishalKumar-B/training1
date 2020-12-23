@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,8 +17,7 @@
 	<table align="center" border="1.0" cellpadding="2">
 		<tr>
 			<td style='border: none'><input type="button"
-				value="&#8592; back"
-				onclick="location.href='admin_home.jsp'">
+				value="&#8592; back" onclick="location.href='admin_home.jsp'">
 		</tr>
 		<tr>
 			<td>Id:</td>
@@ -36,7 +35,7 @@
 			com.motivity.securityguard.SecurityGuardPOJO
 			,java.util.ArrayList,java.util.List"%>
 			<%
-			ViewSecurityGuardBean odb = new ViewSecurityGuardBean();
+				ViewSecurityGuardBean odb = new ViewSecurityGuardBean();
 			List<SecurityGuardPOJO> list = odb.getdetails();
 			for (SecurityGuardPOJO sp : list) {
 			%>
@@ -50,7 +49,16 @@
 			<td><%=sp.getSecurityguard_education()%></td>
 			<td><%=sp.getSecurityguard_aadhar()%></td>
 			<td><%=sp.getSecurityguard_experience()%></td>
-			<td><a href="deletesecurityguardbean.jsp?id=<%=sp.getSecurityguard_id()%>">delete</a></td>
+			<td><a
+				href="deletesecurityguardbean.jsp?id=<%=sp.getSecurityguard_id()%>">delete</a></td>
+		</tr>
+		<%
+			}
+		if (list.isEmpty()) {
+		%>
+		<tr>
+			<td colspan="10" align="center"><label style="color: red">No
+					records exist</label></td>
 		</tr>
 		<%
 			}

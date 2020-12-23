@@ -51,6 +51,14 @@
 
 		<%
 			}
+		if (list.isEmpty()) {
+		%>
+		<tr>
+			<td colspan="10" align="center"><label style="color: red">No
+					records exist</label></td>
+		</tr>
+		<%
+			}
 		%>
 	</table>
 </body>

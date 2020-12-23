@@ -13,6 +13,7 @@ public class AdminLogin extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		
 		AdminPOJO ap = new AdminPOJO();
 		ap.setAdmin_id(1);
 		ap.setAdmin_name("admin");
@@ -24,6 +25,7 @@ public class AdminLogin extends HttpServlet {
 		
 		if(email.equals(ap.getAdmin_email()) && password.equals(ap.getAdmin_password())) {
 			System.out.println("login successful");
+			
 			response.sendRedirect("admin_home.jsp");
 		}
 		else {

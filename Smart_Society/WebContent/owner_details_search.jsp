@@ -20,8 +20,8 @@
 			<center>
 				<input type="text" placeholder="search by flat number"
 					name="flat_number"> <input type="submit" value="search">
-				<input type="button" value="view all"  
-				onclick="location.href='owner_details.jsp'">
+				<input type="button" value="view all"
+					onclick="location.href='owner_details.jsp'">
 			</center>
 		</form>
 		<br>
@@ -63,6 +63,13 @@
 			<td><%=op.getFloornumber()%>
 			<td><%=op.getGender()%></td>
 			<td><a href="deleteownerbean.jsp?id=<%=op.getId()%>">delete</a></td>
+		</tr>
+		<%
+			}
+		if (list.isEmpty()) {
+		%>
+		<tr>
+			<td colspan="10" align="center"><label style="color: red">No records exist</label></td>
 		</tr>
 		<%
 			}

@@ -17,12 +17,12 @@
 	<br>
 
 	<table align="center" border="1.0" cellpadding="2">
-	<form method="get" action="owner_details_search.jsp">
-		<center>
-			<input type="text" placeholder="search by flat number" name="flat_number">
-			<input type="submit" value="search">
-		</center>
-	</form>
+		<form method="get" action="owner_details_search.jsp">
+			<center>
+				<input type="text" placeholder="search by flat number"
+					name="flat_number"> <input type="submit" value="search">
+			</center>
+		</form>
 		<br>
 		<tr>
 			<td style='border: none'><input type="button"
@@ -61,6 +61,14 @@
 			<td><%=op.getFloornumber()%>
 			<td><%=op.getGender()%></td>
 			<td><a href="deleteownerbean.jsp?id=<%=op.getId()%>">delete</a></td>
+		</tr>
+		<%
+			}
+		if (list.isEmpty()) {
+		%>
+		<tr>
+			<td colspan="10" align="center"><label style="color: red">No
+					records exist</label></td>
 		</tr>
 		<%
 			}

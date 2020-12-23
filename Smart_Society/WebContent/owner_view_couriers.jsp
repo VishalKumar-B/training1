@@ -17,8 +17,7 @@
 	<table align="center" border="1.0" cellpadding="2">
 		<tr>
 			<td style='border: none'><input type="button"
-				value="&#8592; back"
-				onclick="location.href='owner_home.jsp'">
+				value="&#8592; back" onclick="location.href='owner_home.jsp'">
 		</tr>
 		<tr>
 			<td>Id:</td>
@@ -36,7 +35,7 @@
 			,java.util.ArrayList,java.util.List"%>
 		<%
 			OwnerViewCouriersBean ocb = new OwnerViewCouriersBean();
-		int flatnumber = (Integer)session.getAttribute("owner_flatnumber");
+		int flatnumber = (Integer) session.getAttribute("owner_flatnumber");
 		List<CourierPOJO> list = ocb.getdetails(flatnumber);
 		for (CourierPOJO cp : list) {
 		%>
@@ -50,6 +49,14 @@
 		</tr>
 
 
+		<%
+			}
+		if (list.isEmpty()) {
+		%>
+		<tr>
+			<td colspan="10" align="center"><label style="color: red">No
+					couriers exist</label></td>
+		</tr>
 		<%
 			}
 		%>
