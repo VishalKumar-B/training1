@@ -1,4 +1,3 @@
-<%@page import="org.hibernate.internal.build.AllowSysOut"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -17,12 +16,14 @@
 	<br>
 
 	<table align="center" border="1.0" cellpadding="2">
-	<form method="get" action="owner_details_search.jsp">
-		<center>
-			<input type="text" placeholder="search by flat number" name="flat_number">
-			<input type="submit" value="search">
-		</center>
-	</form>
+		<form action="owner_details_search.jsp">
+			<center>
+				<input type="text" placeholder="search by flat number"
+					name="flat_number"> <input type="submit" value="search">
+				<input type="button" value="view all"  
+				onclick="location.href='owner_details.jsp'">
+			</center>
+		</form>
 		<br>
 		<tr>
 			<td style='border: none'><input type="button"
@@ -45,8 +46,9 @@
 			com.motivity.admin.OwnerDetailsBean
 			,java.util.ArrayList,java.util.List"%>
 			<%
-				OwnerDetailsBean odb = new OwnerDetailsBean();
-			List<OwnerPOJO> list = odb.getdetails();
+				int flat_number = Integer.parseInt(request.getParameter("flat_number"));
+			OwnerDetailsBean odb = new OwnerDetailsBean();
+			List<OwnerPOJO> list = odb.getdetails(flat_number);
 			for (OwnerPOJO op : list) {
 			%>
 		

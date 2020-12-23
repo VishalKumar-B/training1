@@ -27,8 +27,7 @@
 			<td>Email:</td>
 			<td>flattype</td>
 			<td>FlatNumber</td>
-			<td>Adhar Number</td>
-			
+			<td>Aadhar Number</td>
 			<td>Phone:</td>
 			<td>Gender</td>
 			<td>password</td>

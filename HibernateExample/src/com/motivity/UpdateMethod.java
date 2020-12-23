@@ -21,7 +21,6 @@ public static void main(String args[]) {
 		
 		s.setMarks(620);		
 		se.update(s);	
-		
 		Transaction tx = se.beginTransaction();
 		tx.commit();
 		

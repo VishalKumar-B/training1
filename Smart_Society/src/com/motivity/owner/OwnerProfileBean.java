@@ -11,6 +11,7 @@ import com.motivity.configuration.Config;
 import com.motivity.securityguard.SecurityGuardPOJO;
 
 public class OwnerProfileBean {
+	@SuppressWarnings("unchecked")
 	public List<OwnerPOJO> getdetails(int id) {
 		List<OwnerPOJO> list = new ArrayList<OwnerPOJO>();
 

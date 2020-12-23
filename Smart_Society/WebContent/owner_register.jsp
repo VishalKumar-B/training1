@@ -29,7 +29,6 @@
 				<td align="right">FlatType:</td>
 				<td align="left"><select name="type">
 						<option value="none" selected disabled hidden>-select-</option>
-						<option value="FlatType">
 						<option value="1RK">1RK</option>
 						<option value="1BHK">1BHK</option>
 						<option value="2BHK">2BHK</option>

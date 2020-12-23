@@ -18,7 +18,7 @@ public class UpdateVisitorDetailsController extends HttpServlet {
 		vp.setVisitor_aadhar_id(request.getParameter("visitor_aadhar_id"));
 		vp.setVisitor_visit_flat(request.getParameter("visitor_visit_flat"));
 		vp.setVisitor_visit_name(request.getParameter("visitor_visit_name"));
-		vp.setVisitor_visit_time("visitor_visit_time");
+		vp.setVisitor_visit_time(request.getParameter("visitor_visit_time"));
 		
 		UpdateVisitorDetailsBean uvdb = new UpdateVisitorDetailsBean();
 		Object a = uvdb.update(vp);
