@@ -75,4 +75,13 @@
 		<servlet-name>OwnerLogin</servlet-name>
 		<url-pattern>/OwnerLoginController</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>OwnerUpdate</servlet-name>
+	<servlet-class>com.motivity.owner.OwnerProfileUpdateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>OwnerUpdate</servlet-name>
+	<url-pattern>/OwnerProfileUpdateController</url-pattern>
+	</servlet-mapping>
 </web-app>

@@ -11,7 +11,7 @@
 <h1>Welcome to Admin Home</h1>
 <a href="owner_profile.jsp">Profile</a> |
 <a href="owner_view_couriers.jsp">View Courier</a> |
-<a href="payment.jsp">Rent Payment</a> |
+<a href="payment_details.jsp">Rent Payment</a> |
 <a href="index.html">logout</a>
 </body>
 </html>

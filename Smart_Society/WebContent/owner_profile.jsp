@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Owner Profile</title>
 </head>
 <body bgcolor="C5EEF9">
 	<br>
@@ -33,6 +33,7 @@
 			<td>password</td>
 			<td>DateOfJoining:</td>
 			<td>FloorNumber:</td>
+			<td>Update</td>
 		<tr>
 			<%@page
 				import="com.motivity.owner.OwnerProfileBean,
@@ -57,6 +58,7 @@
 			<td><%=sgp.getPassword()%></td>
 			<td><%=sgp.getDateofjoing()%></td>
 			<td><%=sgp.getFlatnumber()%></td>
+			<td><a href="owner_profile_update.jsp">Update</a></td>
 		</tr>
 		<%
 			}
