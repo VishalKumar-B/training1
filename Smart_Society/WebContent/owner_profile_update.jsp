@@ -46,12 +46,12 @@
 			</tr>
 			<tr>
 				<td align="right">Password:</td>
-				<td align="left"><input type="text" name="password"
-					placeholder="Enter password "></td>
+				<td align="left"><input type="password" name="password"
+					placeholder="Enter password to update"></td>
 			</tr>
 			<tr>
 				<td align="right"><input type="button" value="&#8592; back"
-					onclick="location.href='index.html'"></td>
+					onclick="location.href='owner_profile.jsp'"></td>
 				<td align="left"><input type="submit" value="Update"></td>
 			</tr>
 

@@ -13,8 +13,18 @@ public class OwnerProfileUpdateController extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		HttpSession hs = request.getSession();
+	    String password = (String) hs.getAttribute("owner_password");
+	    String password_given = request.getParameter("password");
+
+	    boolean b = password.equals(password_given);
 		
-		
+	    if(password_given==null || b==false) {
+			System.out.println("enter valid password");
+			response.sendRedirect("owner_profile_update.jsp?password invalid");
+			return;
+		}
+	    
 		OwnerPOJO op=new OwnerPOJO();
 		op.setId(Integer.parseInt(request.getParameter("id")));
 		op.setName(request.getParameter("name"));
@@ -22,9 +32,6 @@ public class OwnerProfileUpdateController extends HttpServlet {
 		op.setMobilenumber(request.getParameter("mobilenumber"));
 		op.setPassword(request.getParameter("password"));
 		
-		if(op.getPassword()==null) {
-			System.out.println("enter valid password");
-		}
 			
 		OwnerProfileUpdateBean opub = new OwnerProfileUpdateBean();
 		int a = opub.update(op);

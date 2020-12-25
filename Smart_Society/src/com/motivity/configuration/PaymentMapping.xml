@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.motivity.owner.PaymentPOJO"
+		table="payment">
+
+		<id name="payment_id" column="payment_id"></id>
+		<property name="owner_id" column="owner_id"></property>
+		<property name="owner_name" column="owner_name"></property>
+		<property name="email_id" column="email_id"></property>
+		<property name="flat_number" column="flat_number"></property>
+		<property name="amount" column="amount"></property>
+		<property name="card_type" column="card_type"></property>
+		<property name="card_number" column="card_number"></property>
+		<property name="date" column="date"></property>
+
+	</class>
+
+</hibernate-mapping>

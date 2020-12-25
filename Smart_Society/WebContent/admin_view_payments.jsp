@@ -4,13 +4,13 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Payment History</title>
+<title>Payment Details</title>
 </head>
 <body bgcolor="C5EEF9">
 	<br>
 	<br>
 	<center>
-		<h1>Welcome To Payment History</h1>
+		<h1>Welcome To Payment Details</h1>
 	</center>
 	<br>
 	<br>
@@ -20,10 +20,11 @@
 				value="&#8592; back" onclick="location.href='owner_home.jsp'">
 		</tr>
 		<tr>
-			<td>PaymentId:</td>
-			<td>Name:</td>
-			<td>Email:</td>
-			<td>FlatNumber:</td>
+			<td>Payment Id:</td>
+			<td>Owner Id:</td>
+			<td>Owner Name:</td>
+			<td>Owner Email:</td>
+			<td>Owner FlatNumber:</td>
 			<td>Date Of Payment:</td>
 			<td>Amount:</td>
 			<td>Card Type:</td>
@@ -38,11 +39,12 @@
 		<%
 			int owner_id = (Integer) session.getAttribute("owner_id");
 		OwnerViewPaymentHistoryBean ovph = new OwnerViewPaymentHistoryBean();
-		List<PaymentPOJO> list = ovph.getdetails(owner_id);
+		List<PaymentPOJO> list = ovph.getdetails();
 		for (PaymentPOJO pp : list) {
 		%>
 		<tr>
 			<td><%=pp.getPayment_id()%></td>
+			<td><%=pp.getOwner_id() %></td>
 			<td><%=pp.getOwner_name()%></td>
 			<td><%=pp.getEmail_id()%></td>
 			<td><%=pp.getFlat_number()%>

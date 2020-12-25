@@ -29,6 +29,7 @@ public class OwnerLoginController extends HttpServlet {
 		if(a>0) {
 			System.out.println("login successfull");
 			hs.setAttribute("owner_id", op.getId());
+			hs.setAttribute("owner_password", op.getPassword());
 			hs.setAttribute("owner_flatnumber", op.getFlatnumber());
 			response.sendRedirect("owner_home.jsp?msg=login successful");
 		}

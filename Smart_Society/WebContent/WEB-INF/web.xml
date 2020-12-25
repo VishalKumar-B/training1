@@ -84,4 +84,13 @@
 	<servlet-name>OwnerUpdate</servlet-name>
 	<url-pattern>/OwnerProfileUpdateController</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>Payment</servlet-name>
+	<servlet-class>com.motivity.owner.OwnerPaymentController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>Payment</servlet-name>
+	<url-pattern>/OwnerPaymentController</url-pattern>
+	</servlet-mapping>
 </web-app>

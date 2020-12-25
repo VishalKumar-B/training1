@@ -12,7 +12,7 @@
 <a href="securityguard_register.jsp">Add New Security Guard</a> |
 <a href="view_securityguard.jsp">View Securityguard Details</a> |
 <a href="owner_details.jsp">Owner Details</a> |
-<a href="payment_details.jsp">Payment Details</a> |
+<a href="admin_view_payments.jsp">Payment Details</a> |
 <a href="index.html">Logout</a>
 </body>
 </html>

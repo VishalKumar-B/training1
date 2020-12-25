@@ -20,5 +20,6 @@
 		<mapping resource="/com/motivity/configuration/CourierMapping.xml" />
 		<mapping resource="/com/motivity/configuration/VisitorMapping.xml" />
 		<mapping resource="/com/motivity/configuration/OwnerMapping.xml" />
+		<mapping resource="/com/motivity/configuration/PaymentMapping.xml" />
 	</session-factory>
 </hibernate-configuration>
