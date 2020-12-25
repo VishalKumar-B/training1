@@ -17,7 +17,7 @@
 	<table align="center" border="1.0" cellpadding="2">
 		<tr>
 			<td style='border: none'><input type="button"
-				value="&#8592; back" onclick="location.href='owner_home.jsp'">
+				value="&#8592; back" onclick="location.href='admin_home.jsp'">
 		</tr>
 		<tr>
 			<td>Payment Id:</td>
