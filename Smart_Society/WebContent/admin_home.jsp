@@ -9,6 +9,7 @@
 <body bgcolor="C5EEF9" align="center">
 <br>
 <h1>Welcome to Admin Home</h1>
+<a href="change_password.jsp">Change password</a> |
 <a href="securityguard_register.jsp">Add New Security Guard</a> |
 <a href="view_securityguard.jsp">View Securityguard Details</a> |
 <a href="owner_details.jsp">Owner Details</a> |

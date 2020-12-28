@@ -66,8 +66,8 @@
 		<servlet-name>OwnerRegister</servlet-name>
 		<url-pattern>/OwnerRegisterController</url-pattern>
 	</servlet-mapping>
-	
-		<servlet>
+
+	<servlet>
 		<servlet-name>OwnerLogin</servlet-name>
 		<servlet-class>com.motivity.owner.OwnerLoginController</servlet-class>
 	</servlet>
@@ -75,22 +75,31 @@
 		<servlet-name>OwnerLogin</servlet-name>
 		<url-pattern>/OwnerLoginController</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
-	<servlet-name>OwnerUpdate</servlet-name>
-	<servlet-class>com.motivity.owner.OwnerProfileUpdateController</servlet-class>
+		<servlet-name>OwnerUpdate</servlet-name>
+		<servlet-class>com.motivity.owner.OwnerProfileUpdateController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-	<servlet-name>OwnerUpdate</servlet-name>
-	<url-pattern>/OwnerProfileUpdateController</url-pattern>
+		<servlet-name>OwnerUpdate</servlet-name>
+		<url-pattern>/OwnerProfileUpdateController</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
-	<servlet-name>Payment</servlet-name>
-	<servlet-class>com.motivity.owner.OwnerPaymentController</servlet-class>
+		<servlet-name>Payment</servlet-name>
+		<servlet-class>com.motivity.owner.OwnerPaymentController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-	<servlet-name>Payment</servlet-name>
-	<url-pattern>/OwnerPaymentController</url-pattern>
+		<servlet-name>Payment</servlet-name>
+		<url-pattern>/OwnerPaymentController</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ChangePassword</servlet-name>
+		<servlet-class>com.motivity.admin.ChangePasswordController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChangePassword</servlet-name>
+		<url-pattern>/ChangePasswordController</url-pattern>
 	</servlet-mapping>
 </web-app>
