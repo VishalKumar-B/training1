@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.motivity.admin.AdminPOJO"
+		table="admin">
+		
+		<id name="admin_id" column="admin_id"></id>
+		<property name="admin_name" column="admin_name"></property>
+		<property name="admin_email" column="admin_email"></property>
+		<property name="admin_password" column="admin_password"></property>
+		
+	</class>
+
+</hibernate-mapping>

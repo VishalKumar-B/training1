@@ -16,6 +16,7 @@
 		<property name="dialet">org.hibernate.dialect.MySQL8Dialect</property>
 		<property name="hbm2ddl.auto">update</property>
 		
+		<mapping resource="/com/motivity/configuration/AdminMapping.xml"/>
 		<mapping resource="/com/motivity/configuration/SecurityGuardMapping.xml" />
 		<mapping resource="/com/motivity/configuration/CourierMapping.xml" />
 		<mapping resource="/com/motivity/configuration/VisitorMapping.xml" />
