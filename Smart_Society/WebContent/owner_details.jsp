@@ -60,7 +60,7 @@
 			<td><%=op.getFlattype()%></td>
 			<td><%=op.getFloornumber()%>
 			<td><%=op.getGender()%></td>
-			<td><a href="deleteownerbean.jsp?id=<%=op.getId()%>">delete</a></td>
+			<td><a href="delete_owner.jsp?id=<%=op.getId()%>">delete</a></td>
 		</tr>
 		<%
 			}

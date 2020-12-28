@@ -50,7 +50,7 @@
 			<td><%=sp.getSecurityguard_aadhar()%></td>
 			<td><%=sp.getSecurityguard_experience()%></td>
 			<td><a
-				href="deletesecurityguardbean.jsp?id=<%=sp.getSecurityguard_id()%>">delete</a></td>
+				href="delete_securityguard.jsp?id=<%=sp.getSecurityguard_id()%>">delete</a></td>
 		</tr>
 		<%
 			}
