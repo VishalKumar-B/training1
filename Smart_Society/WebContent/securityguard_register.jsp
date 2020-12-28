@@ -30,7 +30,7 @@ textarea {
 		</tr>
 		<tr>
 		<td align="right">Password:</td>
-		<td align="left"><input type="text" name="securityguard_password" placeholder="Enter Password"></td>
+		<td align="left"><input type="password" name="securityguard_password" placeholder="Enter Password"></td>
 		</tr>
 		<tr>
 		<td align="right">Mobile Number:</td>

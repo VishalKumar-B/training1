@@ -11,7 +11,7 @@
 	<br>
 	<br>
 	<center>
-		<h1>Welcome to OWNER Profile</h1>
+		<h1>Welcome to Owner Profile</h1>
 	</center>
 	<br>
 	<br>
