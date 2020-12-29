@@ -6,21 +6,29 @@
 
 <hibernate-configuration>
 	<session-factory>
-	
+
 		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 		<property name="connection.url">jdbc:mysql://localhost:3306/smartsociety</property>
 		<property name="connection.user">root</property>
 		<property name="connection.password">root</property>
-	
+
 		<property name="show_sql">true</property>
 		<property name="dialet">org.hibernate.dialect.MySQL8Dialect</property>
 		<property name="hbm2ddl.auto">update</property>
-		
-		<mapping resource="/com/motivity/configuration/AdminMapping.xml"/>
-		<mapping resource="/com/motivity/configuration/SecurityGuardMapping.xml" />
-		<mapping resource="/com/motivity/configuration/CourierMapping.xml" />
-		<mapping resource="/com/motivity/configuration/VisitorMapping.xml" />
-		<mapping resource="/com/motivity/configuration/OwnerMapping.xml" />
-		<mapping resource="/com/motivity/configuration/PaymentMapping.xml" />
+
+		<mapping
+			resource="/com/motivity/configuration/AdminMapping.xml" />
+		<mapping
+			resource="/com/motivity/configuration/SecurityGuardMapping.xml" />
+		<mapping
+			resource="/com/motivity/configuration/CourierMapping.xml" />
+		<mapping
+			resource="/com/motivity/configuration/VisitorMapping.xml" />
+		<mapping
+			resource="/com/motivity/configuration/OwnerMapping.xml" />
+		<mapping
+			resource="/com/motivity/configuration/PaymentMapping.xml" />
+		<mapping
+			resource="/com/motivity/configuration/QueryMapping.xml" />
 	</session-factory>
 </hibernate-configuration>
