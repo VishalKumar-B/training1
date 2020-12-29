@@ -50,12 +50,9 @@
 			<td><%=qp.getStatus()%></td>
 			<td><form action="update_query_status.jsp" method="post">
 					<input type="hidden" name="query_id" value="<%=qp.getQuery_id()%>">
-					<select name="update_value">
-						<option value="none" selected disabled hidden>-select-</option>
-						<option value="accepted">accepted</option>
-						<option value="working on it">working</option>
-						<option value="fixed">fixed</option>
-					</select> <input type="submit" value="update">
+					<input type=text name="update_value"
+						placeholder="enter update status"> <input type="submit"
+						value="update">
 				</form></td>
 		</tr>
 
