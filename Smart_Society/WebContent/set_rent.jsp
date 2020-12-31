@@ -4,13 +4,13 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>view Rent</title>
+<title>view Maintenance</title>
 </head>
 <body bgcolor="C5EEF9">
 	<br>
 	<br>
 	<center>
-		<h1>Welcome to Set Rent</h1>
+		<h1>Welcome to Set Maintenance Amount</h1>
 	</center>
 	<br>
 	<br>
@@ -27,7 +27,7 @@
 			</tr>
 
 			<tr>
-				<td align="right">Rent Amount:</td>
+				<td align="right">Maintenance Amount:</td>
 				<td align="left"><input type="number" name="rent" -webkit-appearance="none"
 					margin="0"></td>
 			</tr>

@@ -16,8 +16,8 @@
 <a href="owner_details.jsp">Owner Details</a> |
 <a href="admin_view_payments.jsp">Payment Details</a> |
 <a href="admin_view_queries.jsp">View Queries</a> |
-<a href="set_rent.jsp">Set Rent Amount</a> |
-<a href="view_rent.jsp">View Rent Amount</a> |
+<a href="set_rent.jsp">Set Maintenance Amount</a> |
+<a href="view_rent.jsp">View Maintenance Amount</a> |
 <a href="index.html">Logout</a>
 </body>
 </html>

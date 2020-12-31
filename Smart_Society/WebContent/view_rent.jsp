@@ -4,13 +4,13 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Rent Details</title>
+<title>Maintenance Details</title>
 </head>
 <body bgcolor="C5EEF9">
 	<br>
 	<br>
 	<center>
-		<h1>Welcome To View Rent Details</h1>
+		<h1>Welcome To View Maintenance amount Details</h1>
 	</center>
 	<br>
 	<br>
@@ -21,8 +21,8 @@
 		</tr>
 		<tr>
 			<td>Flat Type:</td>
-			<td>Rent Amount:</td>
-			<td>Update Rent Amount:</td>
+			<td>Maintenance Amount:</td>
+			<td>Update Maintenance Amount:</td>
 		</tr>
 		<%@page
 			import="com.motivity.admin.ViewRentBean,
