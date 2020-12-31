@@ -120,13 +120,31 @@
 		<servlet-name>RaiseQuery</servlet-name>
 		<url-pattern>/RaiseQueryController</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
-	<servlet-name>SetRent</servlet-name>
-	<servlet-class>com.motivity.admin.SetRentController</servlet-class>
+		<servlet-name>SetRent</servlet-name>
+		<servlet-class>com.motivity.admin.SetRentController</servlet-class>
 	</servlet>
 	<servlet-mapping>
-	<servlet-name>SetRent</servlet-name>
-	<url-pattern>/SetRentController</url-pattern>
+		<servlet-name>SetRent</servlet-name>
+		<url-pattern>/SetRentController</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SecurityGuardChangePassword</servlet-name>
+		<servlet-class>com.motivity.securityguard.SecurityGuardChangePasswordController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SecurityGuardChangePassword</servlet-name>
+		<url-pattern>/SecurityGuardChangePasswordController</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>SecurityGuardProfileUpdate</servlet-name>
+	<servlet-class>com.motivity.admin.SecurityGuardProfileUpdateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>SecurityGuardProfileUpdate</servlet-name>
+	<url-pattern>/SecurityGuardProfileUpdateController</url-pattern>
 	</servlet-mapping>
 </web-app>

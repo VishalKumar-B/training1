@@ -25,6 +25,7 @@ public class SecurityGuardLoginController extends HttpServlet {
 		if(a>0) {
 			System.out.println("login successfull");
 			hs.setAttribute("securityguard_id", sgp.getSecurityguard_id());
+			hs.setAttribute("securityguard_password", sgp.getSecurityguard_password());
 			response.sendRedirect("securityguard_home.jsp?msg=login successfull");
 		}
 		else

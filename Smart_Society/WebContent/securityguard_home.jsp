@@ -10,6 +10,7 @@
 <br>
 <h1>Welcome to Security Guard Home</h1>
 <a href="securityguard_profile.jsp">Profile</a> |
+<a href="securityguard_change_password.jsp">Change Password</a> |
 <a href="update_courier_details.jsp">Update Courier Details</a> |
 <a href="update_visitors_details.jsp">Update Visitor's Details</a> |
 <a href="securityguard_view_couriers.jsp">View Couriers</a> |

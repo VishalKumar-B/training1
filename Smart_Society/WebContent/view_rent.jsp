@@ -39,7 +39,7 @@
 			<td><form action="update_rent.jsp" method="post">
 					<input type="hidden" name="flat_type" value="<%=rp.getFlat_type()%>">
 					<input type="number" name="update_value"
-						placeholder="enter new rent amount"> <input type="submit"
+						placeholder="new maintenance amount"> <input type="submit"
 						value="update">
 				</form></td>
 		</tr>

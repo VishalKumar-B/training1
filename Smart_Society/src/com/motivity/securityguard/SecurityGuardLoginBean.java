@@ -31,6 +31,7 @@ public class SecurityGuardLoginBean {
 		while(i.hasNext())	{
 			SecurityGuardPOJO s = i.next();
 			sgp.setSecurityguard_id(s.getSecurityguard_id());
+			sgp.setSecurityguard_password(s.getSecurityguard_password());
 			System.out.println(s.getSecurityguard_id()); 
 		}
 		

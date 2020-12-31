@@ -17,7 +17,7 @@
 	<table align="center" border="1.0" cellpadding="2">
 		<tr>
 			<td style='border: none'><input type="button"
-				value="&#8592; back" onclick="location.href='admin_home.jsp'">
+				value="&#8592; back" onclick="location.href='admin_home.jsp'"></td>
 		</tr>
 		<tr>
 			<td>Id:</td>
@@ -50,7 +50,9 @@
 			<td><%=sp.getSecurityguard_aadhar()%></td>
 			<td><%=sp.getSecurityguard_experience()%></td>
 			<td><a
-				href="delete_securityguard.jsp?id=<%=sp.getSecurityguard_id()%>">delete</a></td>
+				href="delete_securityguard.jsp?id=<%=sp.getSecurityguard_id()%>">delete</a>&nbsp&nbsp
+				<a
+				href="securityguard_profile_update.jsp?id=<%=sp.getSecurityguard_id()%>">update</a></td>
 		</tr>
 		<%
 			}
