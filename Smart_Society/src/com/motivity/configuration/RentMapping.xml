@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.motivity.admin.RentPOJO"
+		table="rent">
+		
+		<id name="rent_id" column="rent_id"></id>
+		<property name="flat_type" column="flat_type"></property>
+		<property name="rent" column="rent"></property>
+	
+	</class>
+
+</hibernate-mapping>

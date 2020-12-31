@@ -120,4 +120,13 @@
 		<servlet-name>RaiseQuery</servlet-name>
 		<url-pattern>/RaiseQueryController</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>SetRent</servlet-name>
+	<servlet-class>com.motivity.admin.SetRentController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>SetRent</servlet-name>
+	<url-pattern>/SetRentController</url-pattern>
+	</servlet-mapping>
 </web-app>

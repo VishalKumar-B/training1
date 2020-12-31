@@ -3,6 +3,7 @@
 	
 int query_id=Integer.parseInt(request.getParameter("query_id"));
 String updatevalue=request.getParameter("update_value");
+
 UpdateQueryStatus uqs = new UpdateQueryStatus();
 int a = uqs.update(query_id,updatevalue);
 if (a > 0)

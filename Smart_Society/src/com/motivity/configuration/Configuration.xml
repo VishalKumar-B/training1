@@ -30,5 +30,7 @@
 			resource="/com/motivity/configuration/PaymentMapping.xml" />
 		<mapping
 			resource="/com/motivity/configuration/QueryMapping.xml" />
+		<mapping
+			resource="/com/motivity/configuration/RentMapping.xml" />
 	</session-factory>
 </hibernate-configuration>
