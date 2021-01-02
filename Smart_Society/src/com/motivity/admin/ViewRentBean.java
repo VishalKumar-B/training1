@@ -15,9 +15,7 @@ public class ViewRentBean {
 		List<RentPOJO> list = new ArrayList<RentPOJO>();
 
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 
 		list = se.createQuery("from RentPOJO r").list();
@@ -29,9 +27,7 @@ public class ViewRentBean {
 		List<RentPOJO> list = new ArrayList<RentPOJO>();
 
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 
 		list = se.createQuery("from RentPOJO r where r.flat_type='" + flat_type + "'").list();

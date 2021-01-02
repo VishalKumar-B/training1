@@ -16,9 +16,7 @@ public class ViewSecurityGuardBean {
 		List<SecurityGuardPOJO> list = new ArrayList<SecurityGuardPOJO>();
 
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 
 		list = se.createQuery("from SecurityGuardPOJO s").list();

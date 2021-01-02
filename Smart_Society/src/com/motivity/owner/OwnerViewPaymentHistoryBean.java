@@ -25,35 +25,31 @@ public class OwnerViewPaymentHistoryBean {
 		List<PaymentPOJO> list = new ArrayList<PaymentPOJO>();
 
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 
-		list = se.createQuery("from PaymentPOJO p where p.owner_id='"+owner_id+"'").list();
-		
+		list = se.createQuery("from PaymentPOJO p where p.owner_id='" + owner_id + "'").list();
+
 		Collections.sort(list, new PaymentIdComparator());
 		Comparator<PaymentPOJO> cmp = Collections.reverseOrder(new PaymentIdComparator());
 		Collections.sort(list, cmp);
-		
+
 		return list;
 	}
-	
+
 	public List<PaymentPOJO> getdetails() {
 		List<PaymentPOJO> list = new ArrayList<PaymentPOJO>();
 
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 
 		list = se.createQuery("from PaymentPOJO p").list();
-		
+
 		Collections.sort(list, new PaymentIdComparator());
 		Comparator<PaymentPOJO> cmp = Collections.reverseOrder(new PaymentIdComparator());
 		Collections.sort(list, cmp);
-		
+
 		return list;
 	}
 
@@ -61,14 +57,11 @@ public class OwnerViewPaymentHistoryBean {
 		List<PaymentPOJO> list = new ArrayList<PaymentPOJO>();
 
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 
-		list = se.createQuery("from PaymentPOJO p where date between '"+from_date+"' and '"+to_date+"'").list();
+		list = se.createQuery("from PaymentPOJO p where date between '" + from_date + "' and '" + to_date + "'").list();
 		return list;
 	}
-
 
 }

@@ -16,17 +16,15 @@ public class DeleteOwnerBean {
 	public int delete(int id) {
 
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 
 		Query qr = se.createQuery("delete from OwnerPOJO s where s.id = ?0");
 		qr.setParameter(0, id);
 		int a = qr.executeUpdate();
-		
+
 		tx.commit();
-		if(a!=0)
+		if (a != 0)
 			System.out.println("record deleted");
 
 		return a;

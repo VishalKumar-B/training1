@@ -15,9 +15,7 @@ public class SecurityGuardLoginBean {
 	public int securityguard_Login(SecurityGuardPOJO sgp) {
 
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 
 		String query = "from SecurityGuardPOJO s where s.securityguard_email = ?0 and s.securityguard_password = ?1";
@@ -27,14 +25,14 @@ public class SecurityGuardLoginBean {
 
 		List<SecurityGuardPOJO> li = qr.list();
 		Iterator<SecurityGuardPOJO> i = li.iterator();
-		
-		while(i.hasNext())	{
+
+		while (i.hasNext()) {
 			SecurityGuardPOJO s = i.next();
 			sgp.setSecurityguard_id(s.getSecurityguard_id());
 			sgp.setSecurityguard_password(s.getSecurityguard_password());
-			System.out.println(s.getSecurityguard_id()); 
+			System.out.println(s.getSecurityguard_id());
 		}
-		
+
 		int result = li.size();
 		if (result > 0) {
 			System.out.println("logged in");

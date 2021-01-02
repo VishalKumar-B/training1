@@ -9,13 +9,11 @@ import com.motivity.configuration.Config;
 public class OwnerPaymentBean {
 
 	public Object pay(PaymentPOJO pp) {
-	
-		Config c = new Config();
-		SessionFactory sf = c.con();
 
-		Session se = sf.openSession();
+		Config c = new Config();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
-		
+
 		pp.getOwner_id();
 		pp.getOwner_name();
 		pp.getEmail_id();
@@ -24,16 +22,16 @@ public class OwnerPaymentBean {
 		pp.getCard_type();
 		pp.getCard_number();
 		pp.getDate();
-		
+
 		Object a = se.save(pp);
 		tx.commit();
-		
-		if(a!=null)
+
+		if (a != null)
 			System.out.println("record inserted");
-		
+
 		se.close();
 		return a;
-		
+
 	}
 
 }

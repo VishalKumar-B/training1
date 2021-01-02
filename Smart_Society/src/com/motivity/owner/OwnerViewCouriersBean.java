@@ -24,17 +24,15 @@ public class OwnerViewCouriersBean {
 		List<CourierPOJO> list = new ArrayList<CourierPOJO>();
 
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 
-		list = se.createQuery("from CourierPOJO s where s.courier_flat_number='"+flatnumber+"'").list();
-		
+		list = se.createQuery("from CourierPOJO s where s.courier_flat_number='" + flatnumber + "'").list();
+
 		Collections.sort(list, new CourierIdComparator());
 		Comparator<CourierPOJO> cmp = Collections.reverseOrder(new CourierIdComparator());
 		Collections.sort(list, cmp);
-		
+
 		return list;
 	}
 }

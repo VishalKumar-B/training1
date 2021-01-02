@@ -6,10 +6,11 @@ import org.hibernate.cfg.Configuration;
 
 public class Config {
 
-	public SessionFactory con() {
+	public Session con() {
 	Configuration cf = new Configuration();
 	cf.configure("/com/motivity/configuration/Configuration.xml");
 	SessionFactory sf = cf.buildSessionFactory();
-	return sf;
+	Session se = sf.openSession();
+	return se;
 	}
 }

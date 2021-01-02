@@ -16,9 +16,7 @@ public class AdminLoginBean {
 	public int admin_Login(AdminPOJO ap) {
 
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 
 		String query = "from AdminPOJO a where a.admin_email=?0 and a.admin_password=?1";

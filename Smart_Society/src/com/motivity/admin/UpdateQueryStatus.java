@@ -12,9 +12,7 @@ public class UpdateQueryStatus {
 	public int update(int query_id, String updatevalue) {
 
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 
 		Query qr = se.createQuery("update QueryPOJO q set q.status= '"+updatevalue+"' where q.query_id='"+query_id+"'");

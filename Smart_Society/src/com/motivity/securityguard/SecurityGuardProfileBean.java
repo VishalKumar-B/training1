@@ -17,9 +17,7 @@ public class SecurityGuardProfileBean {
 		List<SecurityGuardPOJO> list = new ArrayList<SecurityGuardPOJO>();
 
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 		int id = sid;
 		list = se.createQuery("from SecurityGuardPOJO s where s.securityguard_id = '" + id + "'").list();

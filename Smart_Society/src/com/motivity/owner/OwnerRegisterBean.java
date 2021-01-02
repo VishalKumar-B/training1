@@ -8,16 +8,11 @@ import com.motivity.configuration.Config;
 
 public class OwnerRegisterBean {
 
-	public Object register(OwnerPOJO op)
-	{
+	public Object register(OwnerPOJO op) {
 		Config c = new Config();
-		SessionFactory sf = c.con();
-		
-		
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
-		
-		
+
 		op.getFlatnumber();
 		op.getAdharnumber();
 		op.getEmailid();
@@ -28,13 +23,13 @@ public class OwnerRegisterBean {
 		op.getMobilenumber();
 		op.getName();
 		op.getFloornumber();
-		
+
 		Object a = se.save(op);
 		tx.commit();
-		
-		if(a!=null)
+
+		if (a != null)
 			System.out.println("record inserted");
-		
+
 		se.close();
 		return a;
 	}

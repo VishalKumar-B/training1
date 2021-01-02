@@ -15,6 +15,7 @@
 	<br>
 	<br>
 	<table align="center" border="1.0" cellpadding="2">
+	
 		<tr>
 			<td style='border: none'><input type="button"
 				value="&#8592; back" onclick="location.href='admin_home.jsp'"></td>

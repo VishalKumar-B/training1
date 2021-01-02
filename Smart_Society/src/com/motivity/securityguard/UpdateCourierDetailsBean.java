@@ -9,28 +9,26 @@ import com.motivity.configuration.Config;
 public class UpdateCourierDetailsBean {
 
 	public Object update(CourierPOJO cp) {
-		
-		Config c = new Config();
-		SessionFactory sf = c.con();
 
-		Session se = sf.openSession();
+		Config c = new Config();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
-		
+
 		cp.getCourier_flat_number();
 		cp.getCourier_receiver_name();
 		cp.getCourier_from_address();
 		cp.getCourier_received_date();
 		cp.getCourier_received_time();
-				
+
 		Object a = se.save(cp);
 		tx.commit();
-		
-		if(a!=null)
+
+		if (a != null)
 			System.out.println("record inserted");
-		
+
 		se.close();
 		return a;
-		
+
 	}
 
 }

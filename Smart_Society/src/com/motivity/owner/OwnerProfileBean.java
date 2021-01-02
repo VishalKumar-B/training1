@@ -16,14 +16,11 @@ public class OwnerProfileBean {
 		List<OwnerPOJO> list = new ArrayList<OwnerPOJO>();
 
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 		int id1 = id;
-		list = se.createQuery("from OwnerPOJO s where s.id = '" + id1+ "'").list();
+		list = se.createQuery("from OwnerPOJO s where s.id = '" + id1 + "'").list();
 		return list;
 	}
-
 
 }

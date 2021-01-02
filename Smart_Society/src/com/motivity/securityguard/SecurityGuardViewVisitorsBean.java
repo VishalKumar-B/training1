@@ -24,9 +24,7 @@ public class SecurityGuardViewVisitorsBean {
 		List<VisitorsPOJO> list = new ArrayList<VisitorsPOJO>();
 
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 
 		list = se.createQuery("from VisitorsPOJO s").list();

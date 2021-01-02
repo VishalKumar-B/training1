@@ -25,9 +25,7 @@ public class AdminViewQueriesBean {
 		List<QueryPOJO> list = new ArrayList<QueryPOJO>();
 
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 
 		list = se.createQuery("from QueryPOJO q").list();

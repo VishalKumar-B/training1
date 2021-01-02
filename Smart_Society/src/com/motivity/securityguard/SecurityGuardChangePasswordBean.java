@@ -11,9 +11,7 @@ public class SecurityGuardChangePasswordBean {
 
 	public int update_password(SecurityGuardPOJO sp) {
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 
 		Query qr = se

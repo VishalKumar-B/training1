@@ -11,9 +11,7 @@ public class AdminRegisterBean {
 	public Object register(AdminPOJO ap) {
 
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 
 		ap.getAdmin_name();

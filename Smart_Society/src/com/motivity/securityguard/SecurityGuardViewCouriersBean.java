@@ -24,9 +24,7 @@ public class SecurityGuardViewCouriersBean {
 		List<CourierPOJO> list = new ArrayList<CourierPOJO>();
 
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 
 		list = se.createQuery("from CourierPOJO s").list();

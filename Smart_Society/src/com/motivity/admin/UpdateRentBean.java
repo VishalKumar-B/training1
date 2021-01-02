@@ -12,9 +12,7 @@ public class UpdateRentBean {
 	public int updateRent(String update_value, String flat_type) {
 
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 
 		Query qr = se.createQuery(

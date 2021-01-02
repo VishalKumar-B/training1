@@ -12,11 +12,9 @@ public class SecurityGuardRegisterBean {
 	public Object register(SecurityGuardPOJO sgp) {
 
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
-		
+
 		sgp.getSecurityguard_name();
 		sgp.getSecurityguard_phone();
 		sgp.getSecurityguard_email();
@@ -25,13 +23,13 @@ public class SecurityGuardRegisterBean {
 		sgp.getSecurityguard_aadhar();
 		sgp.getSecurityguard_experience();
 		sgp.getSecurityguard_password();
-				
+
 		Object a = se.save(sgp);
 		tx.commit();
-		
-		if(a!=null)
+
+		if (a != null)
 			System.out.println("record inserted");
-		
+
 		se.close();
 		return a;
 	}

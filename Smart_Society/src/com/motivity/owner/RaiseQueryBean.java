@@ -11,9 +11,7 @@ public class RaiseQueryBean {
 	public Object raiseQuery(QueryPOJO qp) {
 
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 
 		qp.getOwner_id();

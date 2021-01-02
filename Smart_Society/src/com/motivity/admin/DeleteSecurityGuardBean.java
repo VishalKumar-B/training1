@@ -11,9 +11,7 @@ public class DeleteSecurityGuardBean {
 	public int delete(int id) {
 
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 
 		Query qr = se.createQuery("delete from SecurityGuardPOJO s where s.securityguard_id = ?0");

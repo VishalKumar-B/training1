@@ -11,9 +11,7 @@ public class SetRentBean {
 	public Object set(RentPOJO rp) {
 
 		Config c = new Config();
-		SessionFactory sf = c.con();
-
-		Session se = sf.openSession();
+		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 
 		rp.getFlat_type();
