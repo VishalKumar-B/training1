@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link href="CSS/background.css" type="text/css" rel="stylesheet" />
 <title>securityguard profile update</title>
 </head>
 <body bgcolor="C5EEF9">

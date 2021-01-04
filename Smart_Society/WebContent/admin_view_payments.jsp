@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link href="CSS/background.css" type="text/css" rel="stylesheet" />
 <title>Payment Details</title>
 </head>
 <body bgcolor="C5EEF9">
@@ -16,29 +17,30 @@
 	<br>
 	<form action="payment_details_search.jsp" method="post">
 			<center>
-				From:<input type="date" name="from_date"> &nbsp
-				To:<input type="date" name="to_date"> &nbsp
-				 <input type="submit" value="search">
-				<input type="button" value="view all"
+				From:<input type="date" name="from_date"  id="l1"> &nbsp
+				To:<input type="date" name="to_date" id="l1"> &nbsp
+				 <input type="submit" value="search" id="b1">
+				<input type="button" value="view all" id="b1"
 					onclick="location.href='admin_view_payments.jsp'">
 			</center>
 		</form>
 		<br>
-	<table align="center" border="1.0" cellpadding="2">
+	<table align="center" border="1.0" cellpadding="2" id="t1">
 		<tr>
-			<td style='border: none'><input type="button"
-				value="&#8592; back" onclick="location.href='admin_home.jsp'">
+			<td style='border: none' colspan="9"><input type="button"
+				value="&#8592; back" id="b1" onclick="location.href='admin_home.jsp'">
+				
 		</tr>
 		<tr>
-			<td>Payment Id:</td>
-			<td>Owner Id:</td>
-			<td>Owner Name:</td>
-			<td>Owner Email:</td>
-			<td>Owner FlatNumber:</td>
-			<td>Date Of Payment:</td>
-			<td>Amount:</td>
-			<td>Card Type:</td>
-			<td>Card Number:</td>
+			<th>Payment Id:</th>
+			<th>Owner Id:</th>
+			<th>Owner Name:</th>
+			<th>Owner Email:</th>
+			<th>Owner FlatNumber:</th>
+			<th>Date Of Payment:</th>
+			<th>Amount:</th>
+			<th>Card Type:</th>
+			<th>Card Number:</th>
 		</tr>
 
 
@@ -47,7 +49,7 @@
 			com.motivity.owner.PaymentPOJO
 			,java.util.ArrayList,java.util.List,java.util.*"%>
 		<%
-			int owner_id = (Integer) session.getAttribute("owner_id");
+			
 		OwnerViewPaymentHistoryBean ovph = new OwnerViewPaymentHistoryBean();
 		List<PaymentPOJO> list = ovph.getdetails();
 		for (PaymentPOJO pp : list) {

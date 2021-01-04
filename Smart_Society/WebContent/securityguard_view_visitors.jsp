@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link href="CSS/background.css" type="text/css" rel="stylesheet" />
 <title>Visitors</title>
 </head>
 <body bgcolor="C5EEF9">
@@ -14,20 +15,20 @@
 	</center>
 	<br>
 	<br>
-	<table align="center" border="1.0" cellpadding="2">
+	<table align="center" border="1.0" cellpadding="2" id="t1">
 		<tr>
-			<td style='border: none'><input type="button"
-				value="&#8592; back"
+			<td style='border: none' colspan="7"><input type="button"
+				value="&#8592; back" id="b1"
 				onclick="location.href='securityguard_home.jsp'">
 		</tr>
 		<tr>
-			<td>Visitor Id:</td>
-			<td>Visitor Name:</td>
-			<td>Visitor Mobile:</td>
-			<td>visitor Aadhar:</td>
-			<td>Visit Time:</td>
-			<td>To Visit Name:</td>
-			<td>Flat Number:</td>
+			<th>Visitor Id:</th>
+			<th>Visitor Name:</th>
+			<th>Visitor Mobile:</th>
+			<th>visitor Aadhar:</th>
+			<th>Visit Time:</th>
+			<th>To Visit Name:</th>
+			<th>Flat Number:</th>
 		</tr>
 
 

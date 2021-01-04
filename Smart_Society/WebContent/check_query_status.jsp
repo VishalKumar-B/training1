@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link href="CSS/background.css" type="text/css" rel="stylesheet" />
 <title>Query Status</title>
 </head>
 <body bgcolor="C5EEF9">
@@ -14,19 +15,19 @@
 	</center>
 	<br>
 	<br>
-	<table align="center" border="1.0" cellpadding="2">
+	<table align="center" border="1.0" cellpadding="2" id="t1">
 		<tr>
-			<td style='border: none'><input type="button"
+			<td style='border: none' colspan="7"><input type="button" id="b1"
 				value="&#8592; back" onclick="location.href='owner_home.jsp'">
 		</tr>
 		<tr>
-			<td>Query Id:</td>
-			<td>Owner Id:</td>
-			<td>Owner Name:</td>
-			<td>Owner Email:</td>
-			<td>Flat Number:</td>
-			<td>complaint:</td>
-			<td>status:</td>
+			<th>Query Id:</th>
+			<th>Owner Id:</th>
+			<th>Owner Name:</th>
+			<th>Owner Email:</th>
+			<th>Flat Number:</th>
+			<th>complaint:</th>
+			<th>status:</th>
 		</tr>
 
 

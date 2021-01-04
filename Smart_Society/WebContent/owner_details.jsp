@@ -5,6 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link href="CSS/background.css" type="text/css" rel="stylesheet" />
 <title>Owner Details</title>
 </head>
 <body bgcolor="C5EEF9">
@@ -16,17 +17,19 @@
 	<br>
 	<br>
 
-	<table align="center" border="1.0" cellpadding="2">
+	<table align="center" border="1.0" cellpadding="2" id="t1">
 		<form method="get" action="owner_details_search.jsp">
 			<center>
-				<input type="text" placeholder="search by flat number"
-					name="flat_number"> <input type="submit" value="search">
+				<input type="number" placeholder="search by flat number" id="l2"
+					name="flat_number"> <input type="submit" value="search"
+					id="b1">
 			</center>
 		</form>
 		<br>
 		<tr>
-			<td style='border: none'><input type="button"
-				value="&#8592; back" onclick="location.href='admin_home.jsp'">
+			<td style='border: none' colspan="10"><input type="button"
+				id="b1" value="&#8592; back"
+				onclick="location.href='admin_home.jsp'">
 		</tr>
 		<tr>
 			<td>Id:</td>
@@ -60,7 +63,9 @@
 			<td><%=op.getFlattype()%></td>
 			<td><%=op.getFloornumber()%>
 			<td><%=op.getGender()%></td>
-			<td><a href="delete_owner.jsp?id=<%=op.getId()%>">delete</a></td>
+			<td><input type="button" id="b1" value="delete"
+				onclick="location.href='delete_owner.jsp?id=<%=op.getId()%>'">
+			</td>
 		</tr>
 		<%
 			}

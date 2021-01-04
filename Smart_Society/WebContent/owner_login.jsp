@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link href="CSS/background.css" type="text/css" rel="stylesheet" />
 <title>Owner Login</title>
 </head>
 <body bgcolor="C5EEF9">
@@ -19,16 +20,16 @@
 			
 			<tr>
 				<td align="right">Email: </td>
-				<td align="left"><input type="email" name="email" placeholder="Enter email"></td>
+				<td align="left"><input type="email" name="email" placeholder="Enter email" id="l1"></td>
 			</tr>
 			<tr>
 				<td align="right">Password: </td>
-				<td align="left"><input type="password" name="password"
+				<td align="left"><input type="password" name="password" id="l1"
 					placeholder="Enter password"></td>
 			</tr>
 			<tr>
-				<td align="right"><input type="button" value="&#8592; back" onclick="location.href='index.html'"></td>
-				<td align="left"><input type="submit" value="Login"></td>
+				<td align="right"><input type="button" id="b1" value="&#8592; back" onclick="location.href='index.html'"></td>
+				<td align="left"><input type="submit" id="b1" value="Login"></td>
 			</tr>
 			
 		</table>

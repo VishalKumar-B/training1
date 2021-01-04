@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link href="CSS/background.css" type="text/css" rel="stylesheet" />
 <title>Security Login</title>
 </head>
 <body bgcolor="C5EEF9">
@@ -19,18 +20,18 @@
 
 			<tr>
 				<td align="right">Email:</td>
-				<td align="left"><input type="email" name="securityguard_email"
+				<td align="left"><input type="email" name="securityguard_email" id="l1"
 					placeholder="Enter email"></td>
 			</tr>
 			<tr>
 				<td align="right">Password:</td>
-				<td align="left"><input type="password" name="securityguard_password"
+				<td align="left"><input type="password" name="securityguard_password" id="l1"
 					placeholder="Enter password"></td>
 			</tr>
 			<tr>
-				<td align="right"><input type="button" value="&#8592; back"
+				<td align="right"><input type="button" value="&#8592; back" id="b1"
 					onclick="location.href='index.html'"></td>
-				<td align="left"><input type="submit" value="Login"></td>
+				<td align="left"><input type="submit" value="Login" id="b1"></td>
 			</tr>
 
 		</table>

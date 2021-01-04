@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link href="CSS/background.css" type="text/css" rel="stylesheet" />
 <title>Owner Register</title>
 </head>
 <body bgcolor="C5EEF9">
@@ -17,17 +18,17 @@
 		<table align="center">
 			<tr>
 				<td align="right">Name:</td>
-				<td align="left"><input type="text" name="name"
+				<td align="left"><input type="text" name="name" id="l1"
 					placeholder="Enter name "></td>
 			</tr>
 			<tr>
 				<td align="right">email id:</td>
-				<td align="left"><input type="email" name="email"
+				<td align="left"><input type="email" name="email" id="l1"
 					placeholder="Enter email "></td>
 			</tr>
 			<tr>
 				<td align="right">FlatType:</td>
-				<td align="left"><select name="type">
+				<td align="left"><select name="type" id="l1">
 						<option value="none" selected disabled hidden>-select-</option>
 						<option value="1BHK">1BHK</option>
 						<option value="2BHK">2BHK</option>
@@ -36,37 +37,37 @@
 			</tr>
 			<tr>
 				<td align="right">Flat Number:</td>
-				<td align="left"><input type="text" name="flatnumber"
+				<td align="left"><input type="text" name="flatnumber" id="l1"
 					placeholder="Enter flat number "></td>
 			</tr>
 			<tr>
 				<td align="right">Aadhar Number:</td>
-				<td align="left"><input type="number" name="adhar"
+				<td align="left"><input type="number" name="adhar" id="l1"
 					placeholder="Enter adhar card number "></td>
 			</tr>
 			<tr>
 				<td align="right">Mobile Number:</td>
-				<td align="left"><input type="number" name="mobilenumber"
+				<td align="left"><input type="number" name="mobilenumber" id="l1"
 					placeholder="Enter mobile number "></td>
 			</tr>
 			<tr>
 				<td align="right">Gender:</td>
-				<td align="left"><input type="radio" name="gender" value="Male">Male
-					<input type="radio" name="gender" value="Female">Female</td>
+				<td align="left"><input type="radio" name="gender" value="Male" id="l1">Male
+					<input type="radio" name="gender" value="Female" id="l1">Female</td>
 			</tr>
 			<tr>
 				<td align="right">Password:</td>
-				<td align="left"><input type="password" name="password"
+				<td align="left"><input type="password" name="password" id="l1"
 					placeholder="Enter password "></td>
 			</tr>
 			<tr>
 				<td align="right">Date Of Joining:</td>
-				<td align="left"><input type="date" name="date_of_joining"
+				<td align="left"><input type="date" name="date_of_joining" id="l1"
 					placeholder="Enter date of your joining"></td>
 			</tr>
 			<tr>
 				<td align="right">Floor Number:</td>
-				<td align="left"><select name="FLOORNUMBER">
+				<td align="left"><select name="FLOORNUMBER" id="l1">
 						<option value="none" selected disabled hidden>-select-</option>
 						<option value="1">ONE</option>
 						<option value="2">TWO</option>
@@ -75,13 +76,14 @@
 				</select></td>
 			</tr>
 			<tr>
-				<td align="right"><input type="button" value="&#8592; back"
+				<td align="right"><input type="button" value="&#8592; back" id="b1"
 					onclick="location.href='index.html'"></td>
-				<td align="left"><input type="submit" value="Register"></td>
+				<td align="left"><input type="submit" value="Register" id="b1"></td>
 			</tr>
 			<tr>
 			<td></td>
-			<td align="left"><br><br>Already registered?<a href="owner_login.jsp"> Login</a></td>
+			<td align="left"><br><br>Already registered? &nbsp<input type="button" value="Login" id="b1"
+					onclick="location.href='owner_login.jsp'"></td>
 			</tr>
 		</table>
 	</form>

@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link href="CSS/background.css" type="text/css" rel="stylesheet" />
 <title>view securityguard</title>
 </head>
 <body bgcolor="C5EEF9">
@@ -14,22 +15,22 @@
 	</center>
 	<br>
 	<br>
-	<table align="center" border="1.0" cellpadding="2">
-	
+	<table align="center" border="1.0" cellpadding="2" id="t1">
+
 		<tr>
-			<td style='border: none'><input type="button"
+			<td style='border: none' colspan="9"><input type="button" id="b1"
 				value="&#8592; back" onclick="location.href='admin_home.jsp'"></td>
 		</tr>
 		<tr>
-			<td>Id:</td>
-			<td>Name:</td>
-			<td>Phone:</td>
-			<td>Email:</td>
-			<td>Address</td>
-			<td>Education:</td>
-			<td>Aadhar:</td>
-			<td>Experience:</td>
-			<td>Action:</td>
+			<th>Id:</th>
+			<th>Name:</th>
+			<th>Phone:</th>
+			<th>Email:</th>
+			<th>Address</th>
+			<th>Education:</th>
+			<th>Aadhar:</th>
+			<th>Experience:</th>
+			<th>Action:</th>
 		<tr>
 			<%@page
 				import="com.motivity.admin.ViewSecurityGuardBean,
@@ -50,10 +51,11 @@
 			<td><%=sp.getSecurityguard_education()%></td>
 			<td><%=sp.getSecurityguard_aadhar()%></td>
 			<td><%=sp.getSecurityguard_experience()%></td>
-			<td><a
-				href="delete_securityguard.jsp?id=<%=sp.getSecurityguard_id()%>">delete</a>&nbsp&nbsp
-				<a
-				href="securityguard_profile_update.jsp?id=<%=sp.getSecurityguard_id()%>">update</a></td>
+			<td><input type="button" value="update" id="b1"
+				onclick="location.href='securityguard_profile_update.jsp?id=<%=sp.getSecurityguard_id()%>'"> &nbsp&nbsp
+				<input type="button" value="delete" id="b1"
+				onclick="location.href='delete_securityguard.jsp?id=<%=sp.getSecurityguard_id()%>'">
+			</td>
 		</tr>
 		<%
 			}

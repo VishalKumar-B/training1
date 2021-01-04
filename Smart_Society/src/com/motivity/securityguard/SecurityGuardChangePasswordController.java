@@ -42,7 +42,7 @@ public class SecurityGuardChangePasswordController extends HttpServlet {
 		
 		if(a>0) {
 			System.out.println("updated");
-			response.sendRedirect("securityguard_home.jsp?updated");
+			response.sendRedirect("securityguard_login.jsp?updated");
 		}
 		else {
 			System.out.println("failed");

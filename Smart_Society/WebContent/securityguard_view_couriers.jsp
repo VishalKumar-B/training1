@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link href="CSS/background.css" type="text/css" rel="stylesheet" />
 <title>Couriers</title>
 </head>
 <body bgcolor="C5EEF9">
@@ -14,19 +15,19 @@
 	</center>
 	<br>
 	<br>
-	<table align="center" border="1.0" cellpadding="2">
+	<table align="center" border="1.0" cellpadding="2" id="t1">
 		<tr>
-			<td style='border: none'><input type="button"
+			<td style='border: none' colspan="6"><input type="button" id="b1"
 				value="&#8592; back"
 				onclick="location.href='securityguard_home.jsp'">
 		</tr>
 		<tr>
-			<td>Id:</td>
-			<td>To:</td>
-			<td>FlatNumber:</td>
-			<td>From:</td>
-			<td>Received Date:</td>
-			<td>Received Time:</td>
+			<th>Id:</th>
+			<th>To:</th>
+			<th>FlatNumber:</th>
+			<th>From:</th>
+			<th>Received Date:</th>
+			<th>Received Time:</th>
 		</tr>
 
 

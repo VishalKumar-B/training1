@@ -5,6 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link href="CSS/background.css" type="text/css" rel="stylesheet" />
 <title>Owner Profile</title>
 </head>
 <body bgcolor="C5EEF9">
@@ -15,25 +16,25 @@
 	</center>
 	<br>
 	<br>
-	<table align="center" border="1.0" cellpadding="2">
+	<table align="center" border="1.0" cellpadding="2" id="t1">
 		<tr>
-			<td style='border: none'><input type="button"
+			<td style='border: none'><input type="button" id="b1"
 				value="&#8592; back"
 				onclick="location.href='owner_home.jsp'">
 		</tr>
 		<tr>
-			<td>Id:</td>
-			<td>Name:</td>
-			<td>Email:</td>
-			<td>flattype</td>
-			<td>FlatNumber</td>
-			<td>Aadhar Number</td>
-			<td>Phone:</td>
-			<td>Gender</td>
-			<td>password</td>
-			<td>DateOfJoining:</td>
-			<td>FloorNumber:</td>
-			<td>Update</td>
+			<th>Id:</th>
+			<th>Name:</th>
+			<th>Email:</th>
+			<th>flattype</th>
+			<th>FlatNumber</th>
+			<th>Aadhar Number</th>
+			<th>Phone:</th>
+			<th>Gender</th>
+			<th>password</th>
+			<th>DateOfJoining:</th>
+			<th>FloorNumber:</th>
+			<th>Update</th>
 		<tr>
 			<%@page
 				import="com.motivity.owner.OwnerProfileBean,
@@ -58,7 +59,10 @@
 			<td><%=sgp.getPassword()%></td>
 			<td><%=sgp.getDateofjoing()%></td>
 			<td><%=sgp.getFlatnumber()%></td>
-			<td><a href="owner_profile_update.jsp">Update</a></td>
+			<td>
+			<input type="button" id="b1"
+				value="update"
+				onclick="location.href='owner_profile_update.jsp'">
 		</tr>
 		<%
 			}

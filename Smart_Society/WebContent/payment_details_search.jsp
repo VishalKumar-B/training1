@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link href="CSS/background.css" type="text/css" rel="stylesheet" />
 <title>Payment Details</title>
 </head>
 <body bgcolor="C5EEF9">
@@ -16,16 +17,16 @@
 	<br>
 	<form action="payment_details_search.jsp">
 		<center>
-			From:<input type="date" name="from_date"> To:<input type="date"
-				name="to_date"> <input type="submit" value="search">
-			<input type="button" value="view all"
+			From:<input type="date" name="from_date" id="l2"> To:<input type="date" id="l2"
+				name="to_date"> <input type="submit" value="search" id="b1">
+			<input type="button" value="view all" id="b1"
 				onclick="location.href='admin_view_payments.jsp'">
 		</center>
 	</form>
 	<br>
-	<table align="center" border="1.0" cellpadding="2">
+	<table align="center" border="1.0" cellpadding="2" id="t1">
 		<tr>
-			<td style='border: none'><input type="button"
+			<td style='border: none' colspan="9"><input type="button" id="b1"
 				value="&#8592; back" onclick="location.href='admin_home.jsp'">
 		</tr>
 		<tr>

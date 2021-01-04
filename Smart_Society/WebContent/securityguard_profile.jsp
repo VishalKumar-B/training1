@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link href="CSS/background.css" type="text/css" rel="stylesheet" />
 <title>Security Guard Profile</title>
 </head>
 <body bgcolor="C5EEF9">
@@ -14,21 +15,21 @@
 	</center>
 	<br>
 	<br>
-	<table align="center" border="1.0" cellpadding="2">
+	<table align="center" border="1.0" cellpadding="2" id="t1">
 		<tr>
-			<td style='border: none'><input type="button"
-				value="&#8592; back"
+			<td style='border: none' colspan="8"><input type="button"
+				value="&#8592; back" id="b1"
 				onclick="location.href='securityguard_home.jsp'">
 		</tr>
 		<tr>
-			<td>Id:</td>
-			<td>Name:</td>
-			<td>Phone:</td>
-			<td>Email:</td>
-			<td>Address</td>
-			<td>Education:</td>
-			<td>Aadhar:</td>
-			<td>Experience:</td>
+			<th>Id:</th>
+			<th>Name:</th>
+			<th>Phone:</th>
+			<th>Email:</th>
+			<th>Address</th>
+			<th>Education:</th>
+			<th>Aadhar:</th>
+			<th>Experience:</th>
 		<tr>
 			<%@page
 				import="com.motivity.securityguard.SecurityGuardProfileBean,
