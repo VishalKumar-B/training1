@@ -19,7 +19,7 @@ public class OwnerDetailsBean {
 		Config c = new Config();
 		Session se = c.con();
 		Transaction tx = se.beginTransaction();
-		list = se.createQuery("from OwnerPOJO s").list();
+		list = se.createQuery("from OwnerPOJO s where s.registration_status='accepted'").list();
 		return list;
 	}
 
@@ -30,8 +30,19 @@ public class OwnerDetailsBean {
 		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 
-		list = se.createQuery("from OwnerPOJO s where s.flatnumber='" + flat_number + "'").list();
+		list = se.createQuery("from OwnerPOJO s where s.flatnumber='" + flat_number + "' and s.registration_status='accepted'").list();
 		return list;
 
 	}
+	
+	public List<OwnerPOJO> viewRequests() {
+		List<OwnerPOJO> list = new ArrayList<OwnerPOJO>();
+
+		Config c = new Config();
+		Session se = c.con();
+		Transaction tx = se.beginTransaction();
+		list = se.createQuery("from OwnerPOJO s where s.registration_status IS NULL").list();
+		return list;
+	}
+	
 }

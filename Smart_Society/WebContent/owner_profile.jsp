@@ -18,7 +18,7 @@
 	<br>
 	<table align="center" border="1.0" cellpadding="2" id="t1">
 		<tr>
-			<td style='border: none'><input type="button" id="b1"
+			<td style='border: none' colspan="12"><input type="button" id="b1"
 				value="&#8592; back"
 				onclick="location.href='owner_home.jsp'">
 		</tr>

@@ -18,6 +18,7 @@
 		<property name="floornumber" column="FLOORNUMBER"></property>
 		<property name="gender" column="gender"></property>
 		<property name="password" column="password"></property>
+		<property name="registration_status" column="registration_status"></property>
 	</class>
 
 </hibernate-mapping>

@@ -19,7 +19,7 @@ public class OwnerLoginBean {
 		Session se = c.con();
 		Transaction tx = se.beginTransaction();
 
-		String query = "from OwnerPOJO s where s.emailid=?0 and s.password=?1";
+		String query = "from OwnerPOJO s where s.emailid=?0 and s.password=?1  and s.registration_status='accepted'";
 		Query qr = se.createQuery(query);
 		qr.setParameter(0, op.getEmailid());
 		qr.setParameter(1, op.getPassword());

@@ -18,6 +18,7 @@
 	<br>
 
 	<table align="center" border="1.0" cellpadding="2" id="t1">
+
 		<form method="get" action="owner_details_search.jsp">
 			<center>
 				<input type="number" placeholder="search by flat number" id="l2"
@@ -32,16 +33,16 @@
 				onclick="location.href='admin_home.jsp'">
 		</tr>
 		<tr>
-			<td>Id:</td>
-			<td>Name:</td>
-			<td>Email:</td>
-			<td>Flat Number:</td>
-			<td>DOJ:</td>
-			<td>Aadhar:</td>
-			<td>Flat Type:</td>
-			<td>Floor Number:</td>
-			<td>Gender:</td>
-			<td>Action</td>
+			<th>Id:</th>
+			<th>Name:</th>
+			<th>Email:</th>
+			<th>Flat Number:</th>
+			<th>DOJ:</th>
+			<th>Aadhar:</th>
+			<th>Flat Type:</th>
+			<th>Floor Number:</th>
+			<th>Gender:</th>
+			<th>Action</th>
 		<tr>
 			<%@page
 				import="com.motivity.owner.OwnerPOJO,

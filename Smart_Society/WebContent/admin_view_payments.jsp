@@ -16,20 +16,21 @@
 	<br>
 	<br>
 	<form action="payment_details_search.jsp" method="post">
-			<center>
-				From:<input type="date" name="from_date"  id="l1"> &nbsp
-				To:<input type="date" name="to_date" id="l1"> &nbsp
-				 <input type="submit" value="search" id="b1">
-				<input type="button" value="view all" id="b1"
-					onclick="location.href='admin_view_payments.jsp'">
-			</center>
-		</form>
-		<br>
+		<center>
+			From: <input type="date" name="from_date" id="l1"> &nbsp To:
+			<input type="date" name="to_date" id="l1"> &nbsp <input
+				type="submit" value="search" id="b1"> <input type="button"
+				value="view all" id="b1"
+				onclick="location.href='admin_view_payments.jsp'">
+
+		</center>
+	</form>
+	<br>
 	<table align="center" border="1.0" cellpadding="2" id="t1">
 		<tr>
 			<td style='border: none' colspan="9"><input type="button"
-				value="&#8592; back" id="b1" onclick="location.href='admin_home.jsp'">
-				
+				value="&#8592; back" id="b1"
+				onclick="location.href='admin_home.jsp'">
 		</tr>
 		<tr>
 			<th>Payment Id:</th>
@@ -49,14 +50,13 @@
 			com.motivity.owner.PaymentPOJO
 			,java.util.ArrayList,java.util.List,java.util.*"%>
 		<%
-			
-		OwnerViewPaymentHistoryBean ovph = new OwnerViewPaymentHistoryBean();
+			OwnerViewPaymentHistoryBean ovph = new OwnerViewPaymentHistoryBean();
 		List<PaymentPOJO> list = ovph.getdetails();
 		for (PaymentPOJO pp : list) {
 		%>
 		<tr>
 			<td><%=pp.getPayment_id()%></td>
-			<td><%=pp.getOwner_id() %></td>
+			<td><%=pp.getOwner_id()%></td>
 			<td><%=pp.getOwner_name()%></td>
 			<td><%=pp.getEmail_id()%></td>
 			<td><%=pp.getFlat_number()%>

@@ -17,10 +17,11 @@
 <a href="securityguard_register.jsp">Add New Security Guard</a>
 <a href="view_securityguard.jsp">View Securityguard Details</a>
 <a href="owner_details.jsp">Owner Details</a>
-<a href="admin_view_payments.jsp">Payment Details</a>
+<a href="admin_view_payments.jsp">Payment Details</a><br><br>
 <a href="admin_view_queries.jsp">View Queries</a>
 <a href="set_rent.jsp">Set Maintenance Amount</a>
 <a href="view_rent.jsp">View Maintenance Amount</a>
+<a href="owner_registration_request.jsp">View Registration Requests</a>
 <a href="index.html">Logout</a> 
 </body>
 </html>

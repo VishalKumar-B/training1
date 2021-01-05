@@ -14,6 +14,7 @@
 	</center>
 	<br>
 	<form action="./AdminRegisterController" method="post" align="center">
+	<div class="myDiv">
 		<br>
 		<table align="center">
 			<tr>
@@ -37,6 +38,7 @@
 				<td align="left"><input type="submit" id="b1" value="Register"></td>
 			</tr>
 		</table>
+		</div>
 	</form>
 </body>
 </html>

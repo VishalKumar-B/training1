@@ -1,3 +1,4 @@
+<%@page import="org.hibernate.internal.build.AllowSysOut"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -11,51 +12,37 @@
 	<br>
 	<br>
 	<center>
-		<h1>Welcome to Owner Details:</h1>
+		<h1>Welcome to View Owner Registration Request:</h1>
 	</center>
 	<br>
 	<br>
 
 	<table align="center" border="1.0" cellpadding="2" id="t1">
-		<form action="owner_details_search.jsp">
-			<center>
-				<input type="number" placeholder="search by flat number" id="l2"
-					name="flat_number"> <input type="submit" value="search"
-					id="b1"> <input type="button" value="view all" id="b1"
-					onclick="location.href='owner_details.jsp'">
-			</center>
-		</form>
 		<br>
 		<tr>
-			<td style='border: none' colspan="10"><input type="button" id="b1"
-				value="&#8592; back" onclick="location.href='admin_home.jsp'">
+			<td style='border: none' colspan="10"><input type="button"
+				id="b1" value="&#8592; back"
+				onclick="location.href='admin_home.jsp'">
 		</tr>
 		<tr>
-			<td>Id:</td>
-			<td>Name:</td>
-			<td>Email:</td>
-			<td>Flat Number:</td>
-			<td>DOJ:</td>
-			<td>Aadhar:</td>
-			<td>Flat Type:</td>
-			<td>Floor Number:</td>
-			<td>Gender:</td>
-			<td>Action</td>
+			<th>Id:</th>
+			<th>Name:</th>
+			<th>Email:</th>
+			<th>Flat Number:</th>
+			<th>DOJ:</th>
+			<th>Aadhar:</th>
+			<th>Flat Type:</th>
+			<th>Floor Number:</th>
+			<th>Gender:</th>
+			<th>Action</th>
 		<tr>
 			<%@page
 				import="com.motivity.owner.OwnerPOJO,
 			com.motivity.admin.OwnerDetailsBean
 			,java.util.ArrayList,java.util.List"%>
 			<%
-			int flat_number;
-			String s = request.getParameter("flat_number");
-			if (s.equals(""))
-				 flat_number = 0;
-			else	
-			flat_number = Integer.parseInt(request.getParameter("flat_number"));
-			
-			OwnerDetailsBean odb = new OwnerDetailsBean();
-			List<OwnerPOJO> list = odb.getdetails(flat_number);
+				OwnerDetailsBean odb = new OwnerDetailsBean();
+			List<OwnerPOJO> list = odb.viewRequests();
 			for (OwnerPOJO op : list) {
 			%>
 		
@@ -69,8 +56,10 @@
 			<td><%=op.getFlattype()%></td>
 			<td><%=op.getFloornumber()%>
 			<td><%=op.getGender()%></td>
-			<td><input type="button" value="delete" id="b1"
-				onclick="location.href='deleteownerbean.jsp?id=<%=op.getId()%>'">
+			<td><input type="button" id="b1" value="accept"
+				onclick="location.href='accept_owner.jsp?id=<%=op.getId()%>'">&nbsp
+				<input type="button" id="b1" value="reject"
+				onclick="location.href='delete_owner_request.jsp?id=<%=op.getId()%>'">
 			</td>
 		</tr>
 		<%
