@@ -15,7 +15,7 @@ textarea {
 <body bgcolor="C5EEF9">
 	<br>
 	<center>
-		<h2>Welcome To Raise a Query</h2>
+		<h1>Welcome To Raise a Query</h1>
 	</center>
 	<br>
 	<form action="./RaiseQueryController" method="post" align="center">

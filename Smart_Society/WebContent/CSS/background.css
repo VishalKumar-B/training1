@@ -7,23 +7,23 @@ body {
 	background-repeat: no-repeat;
 }
 
-h1{
+h1 {
 	color: rgb(255, 255, 255, 0.7);
 }
 
 a:link, a:visited {
-  background-color: rgb(255, 255, 255, 0.7);
-  color: black;
-  border: 1px solid black;
-  padding: 4px 8px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 4px;
+	background-color: rgb(255, 255, 255, 0.7);
+	color: black;
+	border: 1px solid black;
+	padding: 4px 8px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 4px;
 }
 
 a:hover, a:active {
-  background-color: rgb(255, 255, 255, 0.5);
+	background-color: rgb(255, 255, 255, 0.5);
 }
 
 .myDiv {
@@ -87,7 +87,7 @@ a:hover, a:active {
 
 #b1:hover {
 	border-radius: 3px;
-	border:  1px solid #dddddd;
+	border: 1px solid #dddddd;
 }
 
 #l1:active, #l2:active {
@@ -102,6 +102,7 @@ a:hover, a:active {
 	font-size: default;
 	border: 0.5px solid grey;
 	width: default;
+	background-color: rgb(125, 125, 125, 0.5);
 	background: 1px solid transparent;
 	border-radius: 3px;
 }
