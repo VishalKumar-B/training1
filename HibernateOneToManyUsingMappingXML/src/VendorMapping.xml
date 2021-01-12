@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.motivity.onetomany.VendorPOJO" table="vendor">
+		<id name="vendor_id" column="vid"></id>
+		<property name="vendor_name" column="vname"></property>
+		<set name="customer" cascade="all">
+			<key column="fvid"></key>
+			<one-to-many class="com.motivity.onetomany.CustomerPOJO" />
+		</set>
+
+	</class>
+</hibernate-mapping>

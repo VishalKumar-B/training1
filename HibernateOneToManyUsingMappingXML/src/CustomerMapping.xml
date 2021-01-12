@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.motivity.onetomany.CustomerPOJO" table="customer1">
+		<id name="customer_id" column="cid"></id>
+		<property name="customer_name" column="cname"></property>
+		<property name="fvid" column="fvid" insert="false"></property>
+	</class>
+
+</hibernate-mapping>
