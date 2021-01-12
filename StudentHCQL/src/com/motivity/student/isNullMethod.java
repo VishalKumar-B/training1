@@ -8,10 +8,7 @@ import org.hibernate.Transaction;
 import org.hibernate.criterion.Criterion;
 import org.hibernate.criterion.Restrictions;
 
-public class eqMethod {
-
-	// public static SimpleExpression eq(String propertyName,Object value) sets the
-	// equal constraint to the given property.
+public class isNullMethod {
 
 	public static void main(String[] args) {
 
@@ -20,7 +17,7 @@ public class eqMethod {
 		Transaction tx = se.beginTransaction();
 
 		Criteria crt = se.createCriteria(Student25POJO.class);
-		Criterion cn = Restrictions.eq("student_section", new String("B"));
+		Criterion cn = Restrictions.isNull("student_section");
 		
 		crt.add(cn);
 		List<Student25POJO> li = crt.list();
