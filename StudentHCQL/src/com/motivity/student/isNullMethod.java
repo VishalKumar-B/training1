@@ -19,6 +19,8 @@ public class isNullMethod {
 		Criteria crt = se.createCriteria(Student25POJO.class);
 		Criterion cn = Restrictions.isNull("student_section");
 		
+		
+		
 		crt.add(cn);
 		List<Student25POJO> li = crt.list();
 

@@ -6,6 +6,7 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -21,7 +22,8 @@ public class VendorPOJO {
 	private String vendor_name;
 	
 	
-	@OneToMany(cascade = CascadeType.ALL,mappedBy = "fvid")  
+	@OneToMany(cascade = CascadeType.ALL)
+	@JoinColumn(referencedColumnName = "vid", name="fvid")
 	private Set<CustomerPOJO> customer;
 
 	public int getVendor_id() {
