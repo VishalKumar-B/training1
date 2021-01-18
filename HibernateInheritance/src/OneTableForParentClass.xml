@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" 
+	"http://www.hibernate.org/dtd/hibernate-mapping-5.0.dtd"> -->  
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.motivity.Payment">
+		<id name="payment_id" column="pid"></id>
+		<discriminator column="PayType" type="string"></discriminator>
+		<property name="amount" column="amount"></property>
+
+		<subclass name="com.motivity.CreditCard"
+			discriminator-value="cc">
+			<property name="card_type" column="cctype"></property>
+		</subclass>
+
+		<subclass name="com.motivity.Cheque" discriminator-value="cq">
+			<property name="cheque_type" column="cqtype"></property>
+		</subclass>
+	</class>
+
+</hibernate-mapping>

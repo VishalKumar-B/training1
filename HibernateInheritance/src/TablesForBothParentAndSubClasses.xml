@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  <!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-5.0.dtd">
+-->
+ 
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+	<class name="com.motivity.Payment">
+		<id name="payment_id" column="pid"></id>
+		<property name="amount" column="amount"></property>
+		
+		<joined-subclass name="com.motivity.CreditCard" table="creditcard">
+		<key column="cid"></key>
+		<property name="card_type" column="card_type"></property>
+		</joined-subclass>
+		
+		<joined-subclass name="com.motivity.Cheque" table="cheque">
+		<key column="cqid"></key>
+		<property name="cheque_type" column="cheque_type"></property>
+		</joined-subclass>
+	</class>
+
+</hibernate-mapping>

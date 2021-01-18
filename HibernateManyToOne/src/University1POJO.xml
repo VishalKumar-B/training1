@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.motivity.University1POJO" table="university1">
+		<id name="university_id" column="uid"></id>
+		<property name="university_name" column="uname"></property>
+		<property name="university_place" column="place"></property>
+	</class>
+</hibernate-mapping>

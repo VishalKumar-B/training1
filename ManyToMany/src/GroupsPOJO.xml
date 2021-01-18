@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.motivity.GroupsPOJO" table="groups1">
+		<id name="group_id" column="gid"></id>
+		<property name="group_name" column="gname"></property>
+		<set name="users" table="usergroup" cascade="all">
+			<key column="group_id"></key>
+			<many-to-many class="com.motivity.UsersPOJO"
+				column="user_id"></many-to-many>
+		</set>
+	</class>
+</hibernate-mapping>
