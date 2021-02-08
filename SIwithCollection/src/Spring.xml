@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="types" class="com.si.First">
+		<property name="vehicles">
+			<list>
+				<value>car</value>
+				<value>bus</value>
+				<value>bike</value>
+				<value>scooty</value>
+				<value>bike</value>
+				<value>cycle</value>
+				<value>truck</value>
+			</list>
+		</property>
+	</bean>
+</beans>
