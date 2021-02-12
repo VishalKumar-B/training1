@@ -7,10 +7,10 @@ public class ComputerBuilder {
 	private String os;
 	private String processor;
 
-	// every setter returns the object of phone builder
+	// every setter returns the object of computer builder
 	public ComputerBuilder setHardDisk(String hardDisk) {
 		this.hardDisk = hardDisk;
-		return this; //to return the object
+		return this; //to return the object of type computer builder
 	}
 
 	public ComputerBuilder setRam(String ram) {
