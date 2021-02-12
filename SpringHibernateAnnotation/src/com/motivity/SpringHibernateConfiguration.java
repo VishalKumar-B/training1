@@ -37,7 +37,9 @@ public class SpringHibernateConfiguration {
 
 		localSessionFactoryBean.setHibernateProperties(props);
 		try {
-			localSessionFactoryBean.afterPropertiesSet();
+			localSessionFactoryBean.afterPropertiesSet(); 		// to initialize class properties in Spring beans. The
+																// afterPropertiesSet or @PostConstruct is to initialize a
+																// particular object instance and not a class
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
