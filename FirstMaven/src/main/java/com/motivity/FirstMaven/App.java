@@ -1,5 +1,9 @@
 package com.motivity.FirstMaven;
 
+/**
+ * Hello world!
+ *
+ */
 public class App 
 {
     public static void main( String[] args )

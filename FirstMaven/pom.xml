@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.motivity</groupId>
-	<artifactId>FirstMaven</artifactId>
+	<artifactId>FirstMaven2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>FirstMaven</name>
+	<name>FirstMaven2</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -45,19 +45,4 @@
 		</dependency>
 
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
-				<configuration>
-					<source>15</source>
-					<target>15</target>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
-
 </project>

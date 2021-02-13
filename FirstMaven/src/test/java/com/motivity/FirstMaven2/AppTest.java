@@ -1,4 +1,4 @@
-package com.motivity.FirstMaven;
+package com.motivity.FirstMaven2;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
