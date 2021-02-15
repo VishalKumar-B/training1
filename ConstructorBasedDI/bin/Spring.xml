@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="audi" class="com.motivity.Car">
+		<property name="fuel" value="petrol"></property>
+		<property name="speed" value="120"></property>
+		<property name="features">
+			<set>
+				<value>Navigation system</value>
+				<value>Backup camera</value>
+				<value>Dual Front Air bags</value>
+				<value>Leather seats</value>
+				<value>sun roof</value>
+				<value>Remote start</value>
+			</set>
+		</property>
+	</bean>
+	<bean id="kaveri" class="com.motivity.Bus">
+		<property name="fuel" value="disel"></property>
+		<property name="speed" value="60"></property>
+		<property name="passengerlist">
+			<map>
+				<entry key="1" value="kiran" />
+				<entry key="2" value="madhu" />
+				<entry key="3" value="vivek" />
+				<entry key="4" value="shiva" />
+				<entry key="5" value="mohan" />
+				<entry key="6" value="raju" />
+				<entry key="7" value="bunny" />
+				<entry key="8" value="ramu" />
+				<entry key="9" value="virat" />
+				<entry key="10" value="kumar" />
+			</map>
+		</property>
+	</bean>
+
+	<!-- <bean id="pune" class="com.motivity.Travel"> <property name="v"> <ref 
+		bean="kaveri" /> </property> </bean> -->
+</beans>
