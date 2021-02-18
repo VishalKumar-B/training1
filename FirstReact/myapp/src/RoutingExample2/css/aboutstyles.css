@@ -1,0 +1,18 @@
+.h1
+{
+    color:blue;
+}
+
+
+.p
+{
+    text-align:justify;
+    line-height:160%;
+}
+
+#divstyle{
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  
+}
