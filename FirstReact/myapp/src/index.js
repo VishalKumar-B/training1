@@ -22,7 +22,9 @@ import LoadExternalJsonData from './ListKeys/LoadExternalJsonData';
 //import Routings from './RoutingExample1/Routings';
 //import Routings from './RoutingExample2/Routings';
 import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Routings from './RoutingExample3/components/Routings';
+//import Routings from './RoutingExample3/components/Routings';
+import Propsobject from './PropsObject/PropsObject';
+import Routings from './NestedRouting/Routings';
 
 /*
 ReactDOM.render(
@@ -33,8 +35,14 @@ ReactDOM.render(
 );
 */
 
-//routing example 3
+//Nested Routings
 ReactDOM.render(<Routings />, document.getElementById('root'));
+
+//Props Object
+//ReactDOM.render(<Propsobject />, document.getElementById('root'));
+
+//routing example 3
+//ReactDOM.render(<Routings />, document.getElementById('root'));
 
 //routing example 2
 //ReactDOM.render(<Routings />, document.getElementById('root'));
