@@ -30,7 +30,7 @@ const Home=()=> {
         </div>
 
         <div className="col-lg-6">
-          <img src={profile} />
+          <img src={profile} width="547" />
          
          
 
