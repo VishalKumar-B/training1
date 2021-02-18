@@ -25,6 +25,8 @@ import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
 //import Routings from './RoutingExample3/components/Routings';
 import Propsobject from './PropsObject/PropsObject';
 import Routings from './NestedRouting/Routings';
+//import StateObject from './StateObjectAndEvents/StateObject';
+import StateObject1 from './StateObjectAndEvents/StateObject1';
 
 /*
 ReactDOM.render(
@@ -35,8 +37,11 @@ ReactDOM.render(
 );
 */
 
+//State Object and Events
+ReactDOM.render(<StateObject1 />, document.getElementById('root'));
+
 //Nested Routings
-ReactDOM.render(<Routings />, document.getElementById('root'));
+//ReactDOM.render(<Routings />, document.getElementById('root'));
 
 //Props Object
 //ReactDOM.render(<Propsobject />, document.getElementById('root'));
