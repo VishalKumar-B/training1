@@ -1,0 +1,46 @@
+<p> ABOUT COMPONENT TEMPLET RESULT VIEW </p>
+<p>two way data binding</p>
+<div class="container bg-light m-5">
+    <form>
+    
+    <div class="form-group">
+    <label for="">enter firstname: </label>
+    <input 
+    type="text" 
+    class="form-control" name="firstname"
+    [(ngModel)]="formdata.firstname" />
+    </div>
+    <br>
+    
+    <div class="form-group">
+    <label for="">enter lastname: </label>
+    <input 
+    type="text" 
+    class="form-control" name="lastname"
+    [(ngModel)]="formdata.lastname" />
+    
+    </div>
+    <br>
+    <div class="form-group">
+    <label for="">enter email: </label>
+    <input 
+    type="text" 
+    class="form-control" name="email"
+    [(ngModel)]="formdata.email" />
+    
+    </div>
+    <br>
+    </form>
+    
+    <ul>
+    <li>Result is: 
+    {{ formdata.firstname }}.
+    {{ formdata.lastname }}.
+    {{ formdata.email }} </li>
+    </ul>
+    
+    </div>
+    
+    
+    
+    
