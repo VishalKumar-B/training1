@@ -1,0 +1,32 @@
+<div class="container mt-5">
+    <h2>List Of Employees</h2>
+    <!-- npm i ng2-search-filter to install and use pipes -->
+    <!-- Ng2SearchPipeModule should be imported app module and registered into the imports array. It allows us to filter the data in angular -->
+    <!-- Place the HTML Input bind filterTerm with ngModel -->
+        <div class="input-group mt-5">
+            <input type="text" class="form-control rounded" placeholder="Search employee..."
+            [(ngModel)]="searchText" autocomplete="off" style="width: 300px;"/>&nbsp;&nbsp;&nbsp;
+            <a routerLink = "/add/0" class="btn btn-primary">Add New Employee</a>
+          </div>
+    <br />
+    <table class="table">
+        <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th></th>
+            <th></th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees | filter:searchText">
+                <td>{{ employee.id }}</td>
+                <td>{{ employee.name }}</td>
+                <td>{{ employee.email }}</td>
+                <td>{{ employee.phone }}</td>
+                <td><a class="btn btn-primary" [routerLink]="['/edit', employee.id]">Update</a></td>
+                <td><button (click)="onDelete(employee.id)" class="btn btn-primary">delete</button></td> 
+            </tr>
+        </tbody>
+    </table>
+</div>

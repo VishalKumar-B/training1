@@ -15,6 +15,7 @@ import { ServicesComponent } from './services/services.component';
 import { appRoutes } from './routerConfig';
 import { CcontainerComponent } from './ccontainer/ccontainer.component';
 import { FormsModule } from '@angular/forms';
+//import { AboutComponent } from './about';
 
 @NgModule({
   declarations: [
