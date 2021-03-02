@@ -38,10 +38,10 @@ ReactDOM.render(
 */
 
 //State Object and Events
-ReactDOM.render(<StateObject1 />, document.getElementById('root'));
+//ReactDOM.render(<StateObject1 />, document.getElementById('root'));
 
 //Nested Routings
-//ReactDOM.render(<Routings />, document.getElementById('root'));
+ReactDOM.render(<Routings />, document.getElementById('root'));
 
 //Props Object
 //ReactDOM.render(<Propsobject />, document.getElementById('root'));
