@@ -3,6 +3,8 @@ package com.motivity;
 import java.util.List;
 import java.util.Scanner;
 
+import javax.transaction.Transactional;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -88,7 +90,6 @@ public class StudentDao {
 		s.setId(sc.nextInt());
 
 		session = session.getSessionFactory().openSession();
-
 		Transaction transaction = session.beginTransaction();
 
 		String sql = "delete from Student s where s.id=?0";
